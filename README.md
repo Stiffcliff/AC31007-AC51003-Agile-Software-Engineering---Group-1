@@ -1,4 +1,4 @@
-# AC31007-AC51003-Agile-Software-Engineering---Group-1
+# AC31007-AC51003-Agile-Software-Engineering-Group-1
 
 Group Members:
 
