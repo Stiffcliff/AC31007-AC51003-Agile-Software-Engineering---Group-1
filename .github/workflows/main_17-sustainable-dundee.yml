@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: '17-Sustainable-Dundee'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A9101F1BF63A43FB907F6C2D3ED76A5A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C251E5F8CE654E92957F09922F88F262 }}
           package: .
