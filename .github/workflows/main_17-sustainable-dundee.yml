@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - 17-Sustainable-Dundee
+name: Build and deploy PHP app to Azure Web App - 17-sustainable-dundee
 
 on:
   push:
@@ -54,7 +54,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: '17-Sustainable-Dundee'
+          app-name: '17-sustainable-dundee'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1CEE178417164BABB7EEF85FBAD5077E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_378C6D47984E4BEC8B61E57C51B40B0D }}
           package: .
