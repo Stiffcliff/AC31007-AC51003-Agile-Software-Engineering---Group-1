@@ -4,19 +4,19 @@ All information about your first sprint should be put into this folder. Addition
 
 ---
 
-## Day [X] - Scrum Meeting summary
-The Scrum Master for this meeting was **Mike Crabb**
+## Day [1] - Scrum Meeting summary
+The Scrum Master for this meeting was Jason Beesla
 
 ### Members Present:
-Mike, Rachel, information
+Jason Beesla, Cameron Sutcliffe, Leia Ainscough, Ivan Amigo and Bernard Aihevba
 
 ### Members Not Present:
-Naughty Student 1, Naughty Student 2
+
 
 ### Apologies:
-Ill Student 1.
+Andrej Kocak - Working
 
 ### Summary of Conversation:
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Yesterday we constructed the user stories, created the product backlog, sprint backlog and attempted to setup the repository and link it to Azure for the project. We also assigned roles to each other - Leia being the product owner, Jason being the scrum master, and Cameron, Andrej and Bernard being the developers. We then prioritised the stories using estimation techniques as a group. We did face an issue however regarding getting the Azure to work, which is a big problem as we can't progress very far in development without it working. Cameron is working on sorting it by the end of today and is consulting with Mike on fixing it. We are working on in the next 24 hours getting a skeleton version of the website working on a desktop, so that we can build all of the other features on top of this.
 
 ---
