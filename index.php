@@ -18,7 +18,7 @@ $rules = array(
     //
     // Home Page
     //
-    'home' => "/"
+    'frontendhome' => "/"
     //
     // Style
     //
