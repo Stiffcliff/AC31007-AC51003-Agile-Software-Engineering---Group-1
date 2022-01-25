@@ -1,7 +1,7 @@
 <?php
 include("dbconnect.php");
 
-$sql = "SELECT * FROM typesofdog";
+$sql = "SELECT * FROM events";
 
 $rows = array();
 $result = $db->query($sql);
