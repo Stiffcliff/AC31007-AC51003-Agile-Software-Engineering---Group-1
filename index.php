@@ -6,7 +6,7 @@ $rules = array(
     //
     //API Routes
     'apiShowEvents' => "/api/allEvents",
-    'apiShowSingleDogs' => "/api/singleDog/(?'dogID'[\w\-]+)",
+    'frontendhome' => "/api/fronthome",
 
 
 
