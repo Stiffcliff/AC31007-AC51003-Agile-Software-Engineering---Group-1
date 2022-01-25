@@ -1,11 +1,4 @@
-<html>
-<body>
-
-<header>
-  <h1>Main page heading here</h1>
-  <p>Posted by John Doe</p>
-</header>
-
-</body>
-</html>
+<?php  
+ echo "<h1>Hello User, </h1> <p>Welcome to homepage</p>"; 
+?>
 
