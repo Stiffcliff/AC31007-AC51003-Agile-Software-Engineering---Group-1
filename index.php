@@ -12,7 +12,7 @@ $rules = array(
 
     //Admin Pages
     //
-    'login' => "/login",
+    'backendhome' => "/backend",
     'create_article' => "/createarticle",
     'logout' => "/logout",
     //

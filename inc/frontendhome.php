@@ -1,4 +1,4 @@
 <?php  
- echo "<h1>Hello User, </h1> <p>Welcome to homepage</p>"; 
+ echo "<h1>Welcome to frontend home page</h1>"; 
 ?>
 
