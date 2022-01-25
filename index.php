@@ -6,17 +6,19 @@ $rules = array(
     //
     //API Routes
     'apiShowEvents' => "/api/allEvents",
-    
+    'apiShowSingleDogs' => "/api/singleDog/(?'dogID'[\w\-]+)",
 
 
 
     //Admin Pages
     //
-    'backendhome' => "/editEvents",
+    'login' => "/login",
+    'create_article' => "/createarticle",
+    'logout' => "/logout",
     //
     // Home Page
     //
-    'frontendhome' => "/"
+    'home' => "/"
     //
     // Style
     //
