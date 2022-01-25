@@ -6,15 +6,12 @@ $rules = array(
     //
     //API Routes
     'apiShowEvents' => "/api/allEvents",
-    'frontendhome' => "/api/fronthome",
 
 
 
     //Admin Pages
     //
     'backendhome' => "/backend",
-    'create_article' => "/createarticle",
-    'logout' => "/logout",
     //
     // Home Page
     //
