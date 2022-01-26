@@ -1,5 +1,6 @@
 <?php  
 ?>
+<html>
 <head>
     <title>Sustainable Dundee</title>
     <meta charset="UTF-8">
@@ -83,7 +84,7 @@
 <footer>
     <h3>Footer</h3>
 </footer>
-
+</html>
 <?php
 ?>
 
