@@ -5,38 +5,18 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 $rules = array(
     //
     //API Routes
-    'apiShowEvents' => "/api/allEvents",
+    'testpage' => "/back"
+
 
 
     //Admin Pages
     //
-    'backendhome' => "/backend",
+ 
     //
     // Home Page
     //
-    'frontendhome' => "/"
+    'testpage' => "/"
     //
-
-    // Goal Pages
-    'goal1' => "/goal1"
-    'goal2' => "/goal2"
-    'goal3' => "/goal3"
-    'goal4' => "/goal4"
-    'goal5' => "/goal5"
-    'goal6' => "/goal6"
-    'goal7' => "/goal7"
-    'goal8' => "/goal8"
-    'goal9' => "/goal9"
-    'goal10' => "/goal10"
-    'goal11' => "/goal11"
-    'goal12' => "/goal12"
-    'goal13' => "/goal13"
-    'goal14' => "/goal14"
-    'goal15' => "/goal15"
-    'goal16' => "/goal16"
-    'goal17' => "/goal17"
-
-
     // Style
     //
 );
