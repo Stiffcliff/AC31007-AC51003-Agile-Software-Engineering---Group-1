@@ -6,7 +6,7 @@ $rules = array(
     //
     //API Routes
     'apiShowEvents' => "/api/allEvents",
-
+    'apiShowGoal' => "/api/goal/(?'dogID'[\w\-]+)",
 
 
     //Admin Pages
