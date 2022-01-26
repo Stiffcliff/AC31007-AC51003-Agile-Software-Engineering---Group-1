@@ -6,7 +6,6 @@ $rules = array(
     //
     //API Routes
     'apiShowEvents' => "/api/allEvents",
-    'apiShowGoal' => "/api/goal/(?'dogID'[\w\-]+)",
 
 
     //Admin Pages
@@ -17,6 +16,11 @@ $rules = array(
     //
     'frontendhome' => "/"
     //
+
+    // Goal Pages
+    'goal1' => "/goal1"
+
+
     // Style
     //
 );
