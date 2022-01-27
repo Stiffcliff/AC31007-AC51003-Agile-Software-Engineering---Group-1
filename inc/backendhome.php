@@ -12,9 +12,13 @@ include("dbconnect.php");
 }
 </style>
 
-<button onclick="myFunction()">Try it</button>
+<select name="dropdown" onchange=myFunction()>
+    <option value="1">Add</option> 
+    <option value="2">Edit</option>
+    <option value="3">Remove</option>
+</select>
 
-<div id='addEverything'
+<div id='addEverything'>
     <form method="post" id="addForm">
         <div class="container-fluid" id="eventContainer">
             <div class="row justify-content-center">
@@ -45,7 +49,7 @@ include("dbconnect.php");
     <!--        <button type="submit" name="insert" class="btn btn-secondary btn-lg">Add Record</button>-->
         </div>
     </form>
-/div>
+</div>
 
 <?php
     include "dbconnect.php";
