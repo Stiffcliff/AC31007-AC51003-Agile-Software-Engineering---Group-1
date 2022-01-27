@@ -20,23 +20,23 @@ $rules = array(
     ///
     /// Goals
     ///
-    'goal1' => "/goal1",
-    'goal2' => "/goal2",
-    'goal3' => "/goal3",
-    'goal4' => "/goal4",
-    'goal5' => "/goal5",
-    'goal6' => "/goal6",
-    'goal7' => "/goal7",
-    'goal8' => "/goal8",
-    'goal9' => "/goal9",
-    'goal10' => "/goal10",
-    'goal11' => "/goal11",
-    'goal12' => "/goal12",
-    'goal13' => "/goal13",
-    'goal14' => "/goal14",
-    'goal15' => "/goal15",
-    'goal16' => "/goal16",
-    'goal17' => "/goal17"
+    'goal1nopoverty' => "/goal1nopoverty",
+    'goal2zerohunger' => "/goal2zerohunger",
+    'goal3goodhealthandwellbeing' => "/goal3goodhealthandwellbeing",
+    'goal4qualityeducation' => "/goal4qualityeducation",
+    'goal5genderequality' => "/goal5genderequality",
+    'goal6cleanwaterandsanitation' => "/goal6cleanwaterandsanitation",
+    'goal7affordableandcleanenergy' => "/goal7affordableandcleanenergy",
+    'goal8decentworkandeconomicgrowth' => "/goal8decentworkandeconomicgrowth",
+    'goal9industryinnovationandinfrastructure' => "/goal9industryinnovationandinfrastructure",
+    'goal10reducedinequality' => "/goal10reducedinequality",
+    'goal11sustainablecitiesandcommunities' => "/goal11sustainablecitiesandcommunities",
+    'goal12responsibleconsumptionandproduction' => "/goal12responsibleconsumptionandproduction",
+    'goal13climateaction' => "/goal13climateaction",
+    'goal14lifebelowwater' => "/goal14lifebelowwater",
+    'goal15lifeonland' => "/goal15lifeonland",
+    'goal16peaceandjusticestronginstitutions' => "/goal16peaceandjusticestronginstitutions",
+    'goal17partnershipstoachievegoal' => "/goal17partnershipstoachievegoal"
     
     //
     // Style

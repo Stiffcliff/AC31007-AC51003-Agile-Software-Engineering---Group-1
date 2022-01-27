@@ -23,7 +23,7 @@
 </div>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
-        <h3>Goal 16: Peace and Justice, Strong Instiutions</h3>
+        <h3>Goal 16: Peace and Justice, Strong Institutions</h3>
         <p>
           Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.
         </p>
