@@ -79,18 +79,16 @@ include("dbconnect.php");
     console.log(dropdownvalue);
     if (dropdownvalue == "1") {
         addEverythingControl.style.display = "block";
-        console.log(dropdownvalue);
+        console.log("add unhidden");
     }
     if (dropdownvalue == "2") {
-        addEverythingControl.style.display = "none";
-        console.log(dropdownvalue);
+        addEverythingControl.style.display = "block";
+        console.log("add hidden");
     }
     if (dropdownvalue == "3") {
-        addEverythingControl.style.display = "none";
+        addEverythingControl.style.display = "block";
         console.log(dropdownvalue);
-    } else {
-        addEverythingControl.style.display = "none";
-    }
+    } 
     }
 
     
