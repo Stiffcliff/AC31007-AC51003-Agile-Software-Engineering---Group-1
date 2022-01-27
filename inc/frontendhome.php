@@ -35,10 +35,10 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 <div class="main">
     
 	<a href = "google.com">
-        <img src="resources\No Poverty.png"height="150" width="150" alt = "No Poverty">
+        <img src="resources/No Poverty.png"height="150" width="150" alt = "No Poverty">
 	</a>
 <a href = "google.com">
-        <img src="resources\No Hunger.png"height="150" width="150" alt = "No Hunger">
+        <img src="resources/No Hunger.png"height="150" width="150" alt = "No Hunger">
 	</a>	
 <a href = "google.com">
         <img src="C:\Users\berna\OneDrive\Pictures\Agile\Good Health.png"height="150" width="150" alt = "Good Health">
