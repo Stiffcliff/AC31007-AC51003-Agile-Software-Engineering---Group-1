@@ -44,7 +44,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
         <img src="resources/good_health.png"height="150" width="150" alt = "Good Health">
 	</a>
 <a href = "google.com">
-        <img src="resources/quality_education.png"height="150" width="150" alt = "Quality Education">
+        <img src="resources\quality_education.png"height="150" width="150" alt = "Quality Education">
 	</a>	
 <a href = "google.com">
         <img src="./resources/gender_equality.png"height="150" width="150" alt = "Gender Equality">
