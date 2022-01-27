@@ -97,14 +97,18 @@ include("dbconnect.php");
 <script>
     document.getElementById("addForm").reset();
 
+    var addEverythingControl = document.getElementById("addEverything");
+    var editEverythingControl = document.getElementById("editEverything");
+    var removeEverythingControl = document.getElementById("removeEverything");
+
     addEverythingControl.style.display = "none";
     editEverythingControl.style.display = "none";
     removeEverythingControl.style.display = "none";
     
     function myFunction() {
-    var addEverythingControl = document.getElementById("addEverything");
-    var editEverythingControl = document.getElementById("editEverything");
-    var removeEverythingControl = document.getElementById("removeEverything");
+     addEverythingControl = document.getElementById("addEverything");
+     editEverythingControl = document.getElementById("editEverything");
+     removeEverythingControl = document.getElementById("removeEverything");
 
     var dropdownID = document.getElementById("dropdown");
     var dropdownvalue = dropdownID.value;
