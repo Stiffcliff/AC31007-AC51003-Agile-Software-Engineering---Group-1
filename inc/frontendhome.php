@@ -59,7 +59,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
         <img src="C:\Users\berna\OneDrive\Pictures\Agile\Good Jobs.png"height="150" width="150" alt = "Good Jobs">
 	</a>
 <a href = "google.com">
-        <img src="resources/Innovation.png"height="150" width="150" alt = "Innovation">
+        <img src="Innovation.png"height="150" width="150" alt = "Innovation">
 	</a>	
 <a href = "google.com">
         <img src="C:\Users\berna\OneDrive\Pictures\Agile\Reduced Inequalities.png"height="150" width="150" alt = "Reduced Inequalities">
