@@ -73,11 +73,13 @@ include("dbconnect.php");
     document.getElementById("addForm").reset();
     
     function myFunction() {
-    var x = document.getElementById("addEverything");
-    if (dropdown.value === "1") {
-        x.style.display = "block";
+    var addEverythingControl = document.getElementById("addEverything");
+    var dropdownassign = document.getElementById("dropdown");
+    var dropdownvalue = dropdownassign.value;
+    if (dropdownvalue === "1") {
+        addEverythingControl.style.display = "block";
     } else {
-        x.style.display = "none";
+        addEverythingControl.style.display = "none";
     }
     }
 
