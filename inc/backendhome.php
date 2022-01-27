@@ -7,17 +7,13 @@ include("dbconnect.php");
 
 <script>
 $(document).ready(function(){
-    $('#purpose').on('change', function() {
-      if ( this.value == '1')
-      //.....................^.......
-      {
+    $('#purpose').on('change', function () {
+    if(this.value === "1"){
         $("#business").show();
-      }
-      else
-      {
+    } else {
         $("#business").hide();
-      }
-    });
+    }
+});
 });
 </script>
 
@@ -29,6 +25,7 @@ $(document).ready(function(){
 </select>
 <div style='display:none;' id='business'>Business Name<br/>&nbsp;
 <br/>&nbsp;
+    <h1>business</h1>
     <input type='text' class='text' name='business' value size='20' />
     <br/>
 </div>
