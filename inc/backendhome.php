@@ -2,7 +2,7 @@
 include("dbconnect.php");  
 ?>
 
-<form name="eventForm" method="post">
+<form action="handleForm.php" name="eventForm" method="post">
     <div class="container-fluid" id="eventContainer">
         <div class="row justify-content-center">
             <div class="row">
@@ -32,21 +32,6 @@ include("dbconnect.php");
 <!--        <button type="submit" name="insert" class="btn btn-secondary btn-lg">Add Record</button>-->
     </div>
 </form>
-
-<?php
-include "dbconnect.php";
-
-echo "here";
-$EventName = $_POST['eventName'];
-$EventLocation = $_POST['eventLocation'];
-$EventContact = $_POST['eventContact'];
-$EventDescription = $_POST['eventDescription'];
-
-$fullInsert = "INSERT INTO `nopovertyevents` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES (NULL,'$EventName','$EventLocation','$EventContact','$EventDescription')";
-$db->query($fullInsert);
-
-
-?>
 
 <?php
 ?>
