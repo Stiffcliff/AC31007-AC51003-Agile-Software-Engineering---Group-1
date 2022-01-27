@@ -1,4 +1,5 @@
-?php  
+<?php
+define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');  
 ?>
 <html>
 <head>
@@ -34,7 +35,7 @@
 <div class="main">
     
 	<a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\No Poverty.png"height="150" width="150" alt = "No Poverty">
+        <img src=INCLUDE_DIR/"No Poverty.png"height="150" width="150" alt = "No Poverty">
 	</a>
 <a href = "google.com">
         <img src="C:\Users\berna\OneDrive\Pictures\Agile\No Hunger.png"height="150" width="150" alt = "No Hunger">
