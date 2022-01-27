@@ -72,7 +72,7 @@ $EventContact = $_POST['eventContact'];
 $EventDescription = $_POST['eventDescription'];
 
 $fullInsert = "INSERT INTO `nopovertyevents` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES (NULL,'$EventName','$EventLocation','$EventContact','$EventDescription')";
-query($fullInsert);
+$db->query($fullInsert);
 
 
 ?>
