@@ -6,6 +6,7 @@ $rules = array(
     //
     //API Routes
     'backendhome' => "/backend",
+    'apiShowEvents' => "/table",
 
 
 

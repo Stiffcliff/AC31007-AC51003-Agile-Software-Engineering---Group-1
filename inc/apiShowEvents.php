@@ -1,7 +1,7 @@
 <?php
 include("dbconnect.php");
 
-$sql = "SELECT * FROM events";
+$sql = "SELECT * FROM nopovertyevents";
 
 $rows = array();
 $result = $db->query($sql);
