@@ -35,55 +35,55 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 <div class="main">
     
 	<a href = "google.com">
-        <img src="resources/No Poverty.png"height="150" width="150" alt = "No Poverty">
+        <img src="resources/no_poverty.png"height="150" width="150" alt = "No Poverty">
 	</a>
 <a href = "google.com">
-        <img src="resources/No Hunger.png"height="150" width="150" alt = "No Hunger">
+        <img src="resources/no_hunger.png"height="150" width="150" alt = "No Hunger">
 	</a>	
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Good Health.png"height="150" width="150" alt = "Good Health">
+        <img src="resources/good_health.png"height="150" width="150" alt = "Good Health">
 	</a>
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Quality Education.png"height="150" width="150" alt = "Quality Education">
+        <img src="resources/quality_education.png"height="150" width="150" alt = "Quality Education">
 	</a>	
 <a href = "google.com">
-        <img src="./resources/Gender%20Equality.png"height="150" width="150" alt = "Gender Equality">
+        <img src="./resources/gender_equality.png"height="150" width="150" alt = "Gender Equality">
 	</a>
 <a href = "google.com">
-        <img src="https://github.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/blob/main/inc/resources/Clean%20Energy.png"height="150" width="150" alt = "Clean Water">
+        <img src="resources/clean_water.png"height="150" width="150" alt = "Clean Water">
 	</a>
 <a href = "google.com">
-        <img src="inc/resources/Clean Energy.png"height="150" width="150" alt = "Clean Energy">
+        <img src="inc/resources/clean_energy.png"height="150" width="150" alt = "Clean Energy">
 	</a>
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Good Jobs.png"height="150" width="150" alt = "Good Jobs">
+        <img src="resources/good_jobs.png"height="150" width="150" alt = "Good Jobs">
 	</a>
 <a href = "google.com">
-        <img src="Innovation.png"height="150" width="150" alt = "Innovation">
+        <img src="resources/innovation.png"height="150" width="150" alt = "Innovation">
 	</a>	
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Reduced Inequalities.png"height="150" width="150" alt = "Reduced Inequalities">
+        <img src="resources/reduced_inequality.png"height="150" width="150" alt = "Reduced Inequalities">
 	</a>
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Sustainable Cities.png"height="150" width="150" alt = "Sustainable Cities">
+        <img src="resources/sustainable_cities.png"height="150" width="150" alt = "Sustainable Cities">
 	</a>	
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Responsible Consumption.png"height="150" width="150" alt = "Responsible Consumption">
+        <img src="resources/responsible_consumption.png"height="150" width="150" alt = "Responsible Consumption">
 	</a>
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Protect the Planet.png"height="150" width="150" alt = "Protect The Planet">
+        <img src="resources/protect_the_planet.png"height="150" width="150" alt = "Protect The Planet">
 	</a>
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Life Below Water.png"height="150" width="150" alt = "Life Below Water">
+        <img src="resources/life_below_water.png"height="150" width="150" alt = "Life Below Water">
 	</a>
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Life On Land.png"height="150" width="150" alt = "Life On Land">
+        <img src="resources/life_on_land.png"height="150" width="150" alt = "Life On Land">
 	</a>
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Peace and Justice.png"height="150" width="150" alt = "Peace and Justice">
+        <img src="resources/peace_and_justice.png"height="150" width="150" alt = "Peace and Justice">
 		</a>
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Partnerships.png"height="150" width="150" alt = "Partnerships for the Goals">
+        <img src="resources/partnerships.png"height="150" width="150" alt = "Partnerships for the Goals">
 	</a>		
   
 </div>
