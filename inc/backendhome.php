@@ -74,7 +74,7 @@ include("dbconnect.php");
     
     function myFunction() {
     var x = document.getElementById("addEverything");
-    if (x.style.display === "none") {
+    if (dropdown.value === "1") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
