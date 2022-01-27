@@ -1,3 +1,6 @@
+<html>
+Something
+</html>
 <?php
 include "dbconnect.php";
 
