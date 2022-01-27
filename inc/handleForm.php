@@ -1,6 +1,9 @@
 <?php
 include "dbconnect.php";
 
+echo $_POST('submit') !== null;
+echo $_POST['eventName'];
+
 if ( isset( $_POST['submit'] ) ) {
     echo "here";
     $EventName = $_POST['eventName'];
