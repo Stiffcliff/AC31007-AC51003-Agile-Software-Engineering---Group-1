@@ -18,7 +18,7 @@
 </div>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
-        <h2>Intro text about site</h2>
+        <h2>Making Dundee A Better Place</h2>
     </div>
 </div>
 <div class="row">
