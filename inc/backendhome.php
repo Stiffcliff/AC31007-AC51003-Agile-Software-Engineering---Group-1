@@ -12,7 +12,7 @@ include("dbconnect.php");
 }
 </style>
 
-<select name="dropdown" onchange=myFunction()>
+<select name="dropdown" id="dropdown" onchange=myFunction()>
     <option value="1">Add</option> 
     <option value="2">Edit</option>
     <option value="3">Remove</option>
@@ -74,7 +74,7 @@ include("dbconnect.php");
     
     function myFunction() {
     var addEverythingControl = document.getElementById("addEverything");
-    var dropdownassign = document.getElementById("dropdown");
+    var dropdownit = document.getElementById("dropdown");
     var dropdownvalue = dropdownassign.value;
     console.log(dropdownvalue);
     if (dropdownvalue == "1") {
