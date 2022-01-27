@@ -96,6 +96,10 @@ include("dbconnect.php");
 
 <script>
     document.getElementById("addForm").reset();
+
+    addEverythingControl.style.display = "none";
+    editEverythingControl.style.display = "none";
+    removeEverythingControl.style.display = "none";
     
     function myFunction() {
     var addEverythingControl = document.getElementById("addEverything");
