@@ -28,7 +28,7 @@ include("dbconnect.php");
         </div>
     </div>
     <div class="col text-center">
-        <input type="submit" value="Submit">
+        <input type="submit" name="submit" value="Submit">
 <!--        <button type="submit" name="insert" class="btn btn-secondary btn-lg">Add Record</button>-->
     </div>
 </form>
