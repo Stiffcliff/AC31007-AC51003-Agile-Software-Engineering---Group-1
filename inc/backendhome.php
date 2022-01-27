@@ -73,7 +73,7 @@ $EventDescription = $_POST['eventDescription'];
 
 //`HolidayID`,`Name`,`LocationID`,`SeasonID`,`Availability`, `Price`, `TransportID`, `Description`, `Requirements`, `Rating`
 
-$fullInsert = "INSERT INTO nopovertyevents (EventName, EventLocation, EventContact, EventDescription) VALUES ('$EventName','$EventLocation','$EventContact','$EventDescription')";
+$fullInsert = "INSERT INTO `nopovertyevents` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES (NULL,'$EventName','$EventLocation','$EventContact','$EventDescription')";
 
 $execute = mysql_query($fullInsert);
 
