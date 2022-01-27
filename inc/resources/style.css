@@ -1,0 +1,40 @@
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body
+{
+	min-height: 100vh;
+	overflow-x: hidden;
+	
+}
+.main 
+{
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10pw;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(250px,250px));
+	grid-template-rows: repeat(auto-fill,minmax(250px,250px));
+	grid-column-gap: 10px;
+	grid-row-gap:10px;
+	
+	
+}
+
+img
+{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	object-position:center;
+	
+}
+h1{
+	font-size:60px;
+	text-align: center;
+}
