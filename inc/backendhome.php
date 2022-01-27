@@ -74,8 +74,8 @@ include("dbconnect.php");
     
     function myFunction() {
     var addEverythingControl = document.getElementById("addEverything");
-    var dropdownit = document.getElementById("dropdown");
-    var dropdownvalue = dropdownassign.value;
+    var dropdownID = document.getElementById("dropdown");
+    var dropdownvalue = dropdownID.value;
     console.log(dropdownvalue);
     if (dropdownvalue == "1") {
         addEverythingControl.style.display = "block";
