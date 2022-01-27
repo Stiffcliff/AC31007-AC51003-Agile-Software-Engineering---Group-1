@@ -53,7 +53,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
         <img src="https://github.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/blob/main/inc/resources/Clean%20Energy.png"height="150" width="150" alt = "Clean Water">
 	</a>
 <a href = "google.com">
-        <img src="C:\Users\berna\OneDrive\Pictures\Agile\Clean Energy.png"height="150" width="150" alt = "Clean Energy">
+        <img src="inc/resources/Clean Energy.png"height="150" width="150" alt = "Clean Energy">
 	</a>
 <a href = "google.com">
         <img src="C:\Users\berna\OneDrive\Pictures\Agile\Good Jobs.png"height="150" width="150" alt = "Good Jobs">
