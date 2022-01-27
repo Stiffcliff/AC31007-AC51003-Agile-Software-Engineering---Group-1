@@ -15,7 +15,29 @@ $rules = array(
     //
     // Home Page
     //
-    'frontendhome' => "/"
+    'frontendhome' => "/",
+    
+    ///
+    /// Goals
+    ///
+    'goal1' => "goal1",
+    'goal2' => "goal2",
+    'goal3' => "goal3",
+    'goal4' => "goal4",
+    'goal5' => "goal5",
+    'goal6' => "goal6",
+    'goal7' => "goal7",
+    'goal8' => "goal8",
+    'goal9' => "goal9",
+    'goal10' => "goal10",
+    'goal11' => "goal11",
+    'goal12' => "goal12",
+    'goal13' => "goal13",
+    'goal14' => "goal14",
+    'goal15' => "goal15",
+    'goal16' => "goal16",
+    'goal17' => "goal17"
+    
     //
     // Style
     //
