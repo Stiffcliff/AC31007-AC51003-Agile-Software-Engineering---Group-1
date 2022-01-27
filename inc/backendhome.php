@@ -76,18 +76,18 @@ include("dbconnect.php");
     var addEverythingControl = document.getElementById("addEverything");
     var dropdownassign = document.getElementById("dropdown");
     var dropdownvalue = dropdownassign.value;
-    window.alert(dropdownvalue);
+    console.log(dropdownvalue);
     if (dropdownvalue == "1") {
         addEverythingControl.style.display = "block";
-        window.alert(dropdownvalue);
+        console.log(dropdownvalue);
     }
     if (dropdownvalue == "2") {
         addEverythingControl.style.display = "none";
-        window.alert(dropdownvalue);
+        console.log(dropdownvalue);
     }
     if (dropdownvalue == "3") {
         addEverythingControl.style.display = "none";
-        window.alert(dropdownvalue);
+        console.log(dropdownvalue);
     } else {
         addEverythingControl.style.display = "none";
     }
