@@ -2,7 +2,7 @@
 include("dbconnect.php");  
 ?>
 
-<form action="handleForm.php" name="eventForm" method="post">
+<form action="handleForm.php" method="post">
     <div class="container-fluid" id="eventContainer">
         <div class="row justify-content-center">
             <div class="row">
