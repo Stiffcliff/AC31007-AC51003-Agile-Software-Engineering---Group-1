@@ -7,7 +7,23 @@ include("dbconnect.php");
   width: 100%;
   padding: 50px 0;
   text-align: center;
-  background-color: lightblue;
+  background-color: lightgreen;
+  margin-top: 20px;
+}
+
+#editEverything {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: orange;
+  margin-top: 20px;
+}
+
+#removeEverything {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: red;
   margin-top: 20px;
 }
 </style>
@@ -51,6 +67,15 @@ include("dbconnect.php");
     </form>
 </div>
 
+<div id='editEverything'>
+    <h1>EDIT</h1>
+</div>
+
+<div id='removeEverything'>
+    <h1>Remove</h1>
+</div>
+
+
 <?php
     include "dbconnect.php";
 
@@ -74,20 +99,29 @@ include("dbconnect.php");
     
     function myFunction() {
     var addEverythingControl = document.getElementById("addEverything");
+    var editEverythingControl = document.getElementById("editEverything");
+    var removeEverythingControl = document.getElementById("removeEverything");
+
     var dropdownID = document.getElementById("dropdown");
     var dropdownvalue = dropdownID.value;
     console.log(dropdownvalue);
     if (dropdownvalue == "1") {
         addEverythingControl.style.display = "block";
+        editEverythingControl.style.display = "none";
+        removeEverythingControl.style.display = "none";
         console.log("add unhidden");
     }
     if (dropdownvalue == "2") {
-        addEverythingControl.style.display = "block";
-        console.log("add hidden");
+        addEverythingControl.style.display = "none";
+        editEverythingControl.style.display = "block";
+        removeEverythingControl.style.display = "none";
+        console.log("edit unhidden");
     }
     if (dropdownvalue == "3") {
-        addEverythingControl.style.display = "block";
-        console.log(dropdownvalue);
+        addEverythingControl.style.display = "none";
+        editEverythingControl.style.display = "none";
+        removeEverythingControl.style.display = "block";
+        console.log("remove unhidden");
     } 
     }
 
