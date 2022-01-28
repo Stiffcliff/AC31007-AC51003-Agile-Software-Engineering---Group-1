@@ -35,7 +35,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 <div class="main">
 	
     
-	<a href = "https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/goal1nopoverty.php">
+	<a href = "goal1nopoverty.php">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/no_poverty.png"height="150" width="150" alt = "No Poverty">
 	</a>
 <a href = "google.com">
