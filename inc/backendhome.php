@@ -206,7 +206,7 @@ $result = $db->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> ID: ". $row["EventName"]. "Name: ". $row["EventName"]. "Location: " . $row["EventLocation"] . "Contact: ". $row["EventContact"]. "Description: ". $row["EventDescription"]. "<br>";
+        echo "<br> ID: ". $row["EventName"]. " |Name:". $row["EventName"]. " |Location:" . $row["EventLocation"] . " |Contact:". $row["EventContact"]. " |Description:". $row["EventDescription"]. "<br>";
     }
 } else {
     echo "0 results";
