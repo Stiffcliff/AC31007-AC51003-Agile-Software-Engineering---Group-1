@@ -1,6 +1,6 @@
 <?php
 
-define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
+define('INCLUDE_DIR', dirname(__FILE__) . '/Software_Code/');
 
 $rules = array(
     //
