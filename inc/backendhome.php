@@ -192,7 +192,7 @@ include("dbconnect.php");
         var addID = document.getElementById("adddrop");
         var addvalue = addID.options[addID.selectedIndex].text;
         console.log(addvalue);
-        //need to pass addvalue to php and mysql command to insert into selected table - addvalue="nopovertyevents" etc
+        //need to pass addvalue to php and mysql command to insert into selected table - addvalue="nopovertyevents" et
     }
 
     
