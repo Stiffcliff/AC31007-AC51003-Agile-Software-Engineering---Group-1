@@ -54,13 +54,13 @@ include("dbconnect.php");
 </html>
 
 <?php
-$sql = "SELECT EventID,EventName,EventContact FROM nopovertyevents";
+$sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM nopovertyevents";
 $result = $db->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> id: ". $row["EventID"]. " - Name: ". $row["EventName"]. " " . $row["EventContact"] . "<br>";
+        echo "<br> id: ". $row["EventID"]. " - Name: ". $row["EventName"]. " Location:" . $row["EventLocation"] . " Contact: ". $row["EventContact"]. " Description: ". $row["EventDescription"]. "<br>";
     }
 } else {
     echo "0 results";
