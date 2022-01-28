@@ -16,6 +16,7 @@
         <h1>Sustainable Dundee</h1>
     </div>
 </div>
+<hr>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
         <h2>Making Dundee A Better Place</h2>
