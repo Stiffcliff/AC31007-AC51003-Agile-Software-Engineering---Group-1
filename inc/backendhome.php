@@ -162,8 +162,6 @@ include("dbconnect.php");
         var dropdownID = document.getElementById("dropdown");
         var dropdownvalue = dropdownID.value;
 
-        console.log(dropdownvalue);
-
         if (dropdownvalue == "1") {
             addEverythingControl.style.display = "block";
             editEverythingControl.style.display = "none";
