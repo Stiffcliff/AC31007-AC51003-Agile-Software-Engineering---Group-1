@@ -30,6 +30,7 @@ include("dbconnect.php");
 </style>
 
 <select name="dropdown" id="dropdown" onchange=choiceFunction()>
+    <option hidden disabled selected value> -- select an option -- </option>
     <option value="1">Add</option> 
     <option value="2">Edit</option>
     <option value="3">Remove</option>
