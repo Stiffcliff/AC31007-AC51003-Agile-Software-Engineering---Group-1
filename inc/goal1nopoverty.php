@@ -52,7 +52,7 @@ include("dbconnect.php");
 <hr>
 </body>
 <h4>Get involved locally</h4>
-</html>
+
 
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM nopovertyevents";
@@ -70,3 +70,5 @@ if ($result->num_rows > 0) {
 $db->close();
 
 ?>
+</html>
+<br>
