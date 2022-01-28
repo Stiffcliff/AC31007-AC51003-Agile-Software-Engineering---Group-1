@@ -6,6 +6,7 @@ All information about your first sprint should be put into this folder. Addition
 
 ## Day [1] - Scrum Meeting summary
 The Scrum Master for this meeting was Jason Beesla
+Link: https://web.microsoftstream.com/video/0d3337cf-9629-4269-a9a3-62d878c8348d
 
 ### Members Present:
 Jason Beesla, Cameron Sutcliffe, Leia Ainscough, Ivan Amigo and Bernard Aihevba
