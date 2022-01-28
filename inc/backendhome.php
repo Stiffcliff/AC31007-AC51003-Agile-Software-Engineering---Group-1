@@ -29,7 +29,7 @@ include("dbconnect.php");
 </style>
 
 <select name="dropdown" id="dropdown" onchange=choiceFunction()>
-<option hidden disabled selected value> -- select an option -- </option>
+<option hidden disabled selected value="0"> -- select an option -- </option>
     <option value="1">Add</option> 
     <option value="2">Edit</option>
     <option value="3">Remove</option>
@@ -155,36 +155,39 @@ include("dbconnect.php");
     removeEverythingControl.style.display = "none";
     
     function choiceFunction() {
-     addEverythingControl = document.getElementById("addEverything");
-     editEverythingControl = document.getElementById("editEverything");
-     removeEverythingControl = document.getElementById("removeEverything");
+        addEverythingControl = document.getElementById("addEverything");
+        editEverythingControl = document.getElementById("editEverything");
+        removeEverythingControl = document.getElementById("removeEverything");
 
-    var dropdownID = document.getElementById("dropdown");
-    var dropdownvalue = dropdownID.value;
-    console.log(dropdownvalue);
-    if (dropdownvalue == null){
-        addEverythingControl.style.display = "none";
-        editEverythingControl.style.display = "none";
-        removeEverythingControl.style.display = "none";
-    }
-    if (dropdownvalue == "1") {
-        addEverythingControl.style.display = "block";
-        editEverythingControl.style.display = "none";
-        removeEverythingControl.style.display = "none";
-        console.log("add unhidden");
-    }
-    if (dropdownvalue == "2") {
-        addEverythingControl.style.display = "none";
-        editEverythingControl.style.display = "block";
-        removeEverythingControl.style.display = "none";
-        console.log("edit unhidden");
-    }
-    if (dropdownvalue == "3") {
-        addEverythingControl.style.display = "none";
-        editEverythingControl.style.display = "none";
-        removeEverythingControl.style.display = "block";
-        console.log("remove unhidden");
-    } 
+        var dropdownID = document.getElementById("dropdown");
+        var dropdownvalue = dropdownID.value;
+
+        console.log(dropdownvalue);
+
+        if (dropdownvalue == "0"){
+            addEverythingControl.style.display = "none";
+            editEverythingControl.style.display = "none";
+            removeEverythingControl.style.display = "none";
+        }
+        
+        if (dropdownvalue == "1") {
+            addEverythingControl.style.display = "block";
+            editEverythingControl.style.display = "none";
+            removeEverythingControl.style.display = "none";
+            console.log("add unhidden");
+        }
+        if (dropdownvalue == "2") {
+            addEverythingControl.style.display = "none";
+            editEverythingControl.style.display = "block";
+            removeEverythingControl.style.display = "none";
+            console.log("edit unhidden");
+        }
+        if (dropdownvalue == "3") {
+            addEverythingControl.style.display = "none";
+            editEverythingControl.style.display = "none";
+            removeEverythingControl.style.display = "block";
+            console.log("remove unhidden");
+        } 
     }
 
     Function tableFunction(){
