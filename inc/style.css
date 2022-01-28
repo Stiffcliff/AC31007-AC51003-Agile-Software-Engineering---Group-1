@@ -35,6 +35,10 @@ img
 	object-position:center;
 }
 
+img:hover {
+	transform: scale(1.3);
+	}
+
 
 h2{
 	font: size 25px;
