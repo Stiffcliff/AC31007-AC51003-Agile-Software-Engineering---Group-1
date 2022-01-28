@@ -141,8 +141,6 @@ include("dbconnect.php");
 
         readfile("backendhome.php");
     }
-
-    
 ?>
 
 <script>
@@ -186,22 +184,6 @@ include("dbconnect.php");
     function tableFunction(){
         var tableID = document.getElementById("tabledrop");
         var tablevalue = tableID.options[tableID.selectedIndex].text;
-        <?php
-            $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM nopovertyevents";
-            $result = $db->query($sql);
-
-            if ($result->num_rows > 0) {
-                // output data of each row
-                while($row = $result->fetch_assoc()) {
-                    echo "<br> ID:". $row["EventID"]. "Name:". $row["EventName"]. " Location:" . $row["EventLocation"] . " Contact:". $row["EventContact"]. " Description:". $row["EventDescription"]. "<br>";
-                }
-            } else {
-                echo "0 results";
-            }
-
-            $db->close();
-
-        ?>
         console.log(tablevalue);
         //need to pass tablevalue to php and mysql command to show the selected table - tablevalue="nopovertyevents" etc
     }
