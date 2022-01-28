@@ -70,5 +70,6 @@ if ($result->num_rows > 0) {
 $db->close();
 
 ?>
-</html>
 <br>
+</html>
+
