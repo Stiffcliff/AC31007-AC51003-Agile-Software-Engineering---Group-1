@@ -1,4 +1,5 @@
 <?php
+include("dbconnect.php");  
 ?>
 
 <html>
@@ -22,6 +23,11 @@
     </nav>
 </head>
 <body>
+<div class="row">
+    <div class="col d-flex justify-content-center">
+        <h1>Sustainable Dundee</h1>
+    </div>
+</div>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
         <h2>Making Dundee A Better Place</h2>
@@ -46,5 +52,20 @@
 <hr>
 </body>
 </html>
+
 <?php
+$sql = "SELECT EventID,EventName,EventContact FROM nopovertyevents";
+$result = $db->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> id: ". $row["EventID"]. " - Name: ". $row["EventName"]. " " . $row["EventContact"] . "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$db->close();
+
 ?>
