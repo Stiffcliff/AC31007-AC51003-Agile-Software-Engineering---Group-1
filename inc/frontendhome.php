@@ -35,7 +35,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 <div class="main">
     
 	<a href = "google.com">
-        <img src="./resources/no_poverty.png"height="150" width="150" alt = "No Poverty">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/no_poverty.png"height="150" width="150" alt = "No Poverty">
 	</a>
 <a href = "google.com">
         <img src="./resources/no_hunger.png"height="150" width="150" alt = "No Hunger">
