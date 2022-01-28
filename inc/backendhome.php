@@ -2,6 +2,7 @@
 include("dbconnect.php");  
 ?>
 
+
 <style>
 #addEverything {
   width: 100%;
@@ -29,7 +30,6 @@ include("dbconnect.php");
 </style>
 
 <select name="dropdown" id="dropdown" onchange=choiceFunction()>
-<option hidden disabled selected value="0"> -- select an option -- </option>
     <option value="1">Add</option> 
     <option value="2">Edit</option>
     <option value="3">Remove</option>
@@ -37,9 +37,9 @@ include("dbconnect.php");
 
 
     <div id='addEverything'>
-        <script> var addTableName </script>
-        <select name="adddrop" id="adddrop" onchange=addFunction(addTableName)>
-        <option hidden disabled selected value> -- select an option -- </option>
+        
+        <select name="adddrop" id="adddrop" onchange=addFunction()>
+            <option hidden disabled selected value> -- select an option -- </option>
             <option value="1">nopovertyevents</option> 
             <option value="2">goal 2</option>
             <option value="3">goal 3</option>
@@ -57,40 +57,39 @@ include("dbconnect.php");
             <option value="15">goal 15</option>
             <option value="16">goal 16</option> 
             <option value="17">goal 17</option>
-            
-        </select>
+            </select>
     
-    <form method="post" id="addForm">
-        <div class="container-fluid" id="eventContainer">
-            <div class="row justify-content-center">
-                <div class="row">
-                    <div class="col">
-                        <input type="text" id="eventName" name="eventName" class="form-control" placeholder="Name" required>
+        <form method="post" id="addForm">
+            <div class="container-fluid" id="eventContainer">
+                <div class="row justify-content-center">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="eventName" name="eventName" class="form-control" placeholder="Name" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" id="eventLocation" name="eventLocation" class="form-control" placeholder="Location" required>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="eventLocation" name="eventLocation" class="form-control" placeholder="Location" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" id="eventContact" name="eventContact" class="form-control" placeholder="Contact" required>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="eventContact" name="eventContact" class="form-control" placeholder="Contact" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" id="eventDescription" name="eventDescription" class="form-control" placeholder="Description" required>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="eventDescription" name="eventDescription" class="form-control" placeholder="Description" required>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col text-center">
-            <input type="submit" name="submit" value="Submit">
-    <!--        <button type="submit" name="insert" class="btn btn-secondary btn-lg">Add Record</button>-->
-        </div>
-    </form>
-</div>
+            <div class="col text-center">
+                <input type="submit" name="submit" value="Submit">
+        <!--        <button type="submit" name="insert" class="btn btn-secondary btn-lg">Add Record</button>-->
+            </div>
+        </form>
+    </div>
 
 <div id='editEverything'>
     <h1>EDIT</h1>
@@ -153,6 +152,7 @@ include("dbconnect.php");
     addEverythingControl.style.display = "none";
     editEverythingControl.style.display = "none";
     removeEverythingControl.style.display = "none";
+
     
     function choiceFunction() {
         addEverythingControl = document.getElementById("addEverything");
@@ -180,19 +180,15 @@ include("dbconnect.php");
         }
     }
 
-    Function tableFunction(){
+    function tableFunction(){
         var tableID = document.getElementById("tabledrop");
         var tablevalue = tableID.options[tableID.selectedIndex].text;
         console.log(tablevalue);
 
     }
 
-    Function addFunction(addTableName){
-        var addID = document.getElementById("adddrop");
-        var addvalue = addID.options[addID.selectedIndex].text;
-        console.log(addvalue);
-        return addTableName;
-
+    function addFunction(){
+        console.log("hello");
 
     }
 
