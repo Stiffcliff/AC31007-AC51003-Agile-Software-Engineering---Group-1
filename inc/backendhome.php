@@ -164,30 +164,22 @@ include("dbconnect.php");
 
         console.log(dropdownvalue);
 
-        if (dropdownvalue == "0"){
-            addEverythingControl.style.display = "none";
+        if (dropdownvalue == "1") {
+            addEverythingControl.style.display = "block";
             editEverythingControl.style.display = "none";
             removeEverythingControl.style.display = "none";
         }
         
-        if (dropdownvalue == "0") {
-            addEverythingControl.style.display = "block";
-            editEverythingControl.style.display = "none";
-            removeEverythingControl.style.display = "none";
-            console.log("add unhidden");
-        }
         if (dropdownvalue == "2") {
             addEverythingControl.style.display = "none";
             editEverythingControl.style.display = "block";
             removeEverythingControl.style.display = "none";
-            console.log("edit unhidden");
         }
         if (dropdownvalue == "3") {
             addEverythingControl.style.display = "none";
             editEverythingControl.style.display = "none";
             removeEverythingControl.style.display = "block";
-            console.log("remove unhidden");
-        } 
+        }
     }
 
     Function tableFunction(){
