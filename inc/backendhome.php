@@ -162,6 +162,11 @@ include("dbconnect.php");
     var dropdownID = document.getElementById("dropdown");
     var dropdownvalue = dropdownID.value;
     console.log(dropdownvalue);
+    if (dropdownvalue == null){
+        addEverythingControl.style.display = "none";
+        editEverythingControl.style.display = "none";
+        removeEverythingControl.style.display = "none";
+    }
     if (dropdownvalue == "1") {
         addEverythingControl.style.display = "block";
         editEverythingControl.style.display = "none";
