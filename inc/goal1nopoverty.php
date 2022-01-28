@@ -1,5 +1,4 @@
 <?php
-include("dbconnect.php");  
 ?>
 
 <html>
@@ -23,11 +22,6 @@ include("dbconnect.php");
     </nav>
 </head>
 <body>
-<div class="row">
-    <div class="col d-flex justify-content-center">
-        <h1>Sustainable Dundee</h1>
-    </div>
-</div>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
         <h2>Making Dundee A Better Place</h2>
@@ -52,19 +46,5 @@ include("dbconnect.php");
 <hr>
 </body>
 </html>
-
 <?php
-$sql = "SELECT * FROM nopovertyevents";
-
-$result = mysqli_query($conn, $sql); // First parameter is just return of "mysqli_connect()" function
-echo "<br>";
-echo "<table border='1'>";
-while ($row = mysqli_fetch_assoc($result)) { // Important line !!! Check summary get row on array ..
-    echo "<tr>";
-    foreach ($row as $field => $value) { // I you want you can right this line like this: foreach($row as $value) {
-        echo "<td>" . $value . "</td>"; // I just did not use "htmlspecialchars()" function. 
-    }
-    echo "</tr>";
-}
-echo "</table>";
 ?>
