@@ -28,7 +28,7 @@ include("dbconnect.php");
 }
 </style>
 
-<select name="dropdown" id="dropdown" onchange=myFunction()>
+<select name="dropdown" id="dropdown" onchange=choiceFunction()>
 <option hidden disabled selected value> -- select an option -- </option>
     <option value="1">Add</option> 
     <option value="2">Edit</option>
@@ -76,6 +76,30 @@ include("dbconnect.php");
     <h1>Remove</h1>
 </div>
 
+<select name="tabledrop" id="tabledrop" onchange=tableFunction()>
+<option hidden disabled selected value> -- select an option -- </option>
+    <option value="1">nopovertyevents</option> 
+    <option value="2">goal 2</option>
+    <option value="3">goal 3</option>
+    <option value="4">goal 4</option> 
+    <option value="5">goal 5</option>
+    <option value="6">goal 6</option>
+    <option value="7">goal 7</option> 
+    <option value="8">goal 8</option>
+    <option value="9">goal 9</option>
+    <option value="10">goal 10</option> 
+    <option value="11">goal 11</option>
+    <option value="12">goal 12</option>
+    <option value="13">goal 13</option> 
+    <option value="14">goal 14</option>
+    <option value="15">goal 15</option>
+    <option value="16">goal 16</option> 
+    <option value="17">goal 17</option>
+    
+</select>
+
+<div id='list'>
+</div>
 
 <?php
     include "dbconnect.php";
@@ -106,7 +130,7 @@ include("dbconnect.php");
     editEverythingControl.style.display = "none";
     removeEverythingControl.style.display = "none";
     
-    function myFunction() {
+    function choiceFunction() {
      addEverythingControl = document.getElementById("addEverything");
      editEverythingControl = document.getElementById("editEverything");
      removeEverythingControl = document.getElementById("removeEverything");
@@ -132,6 +156,15 @@ include("dbconnect.php");
         removeEverythingControl.style.display = "block";
         console.log("remove unhidden");
     } 
+    }
+
+    Function tableFunction(){
+        var tableID = document.getElementById("tabledrop");
+        var tablevalue = tableID.options[tableID.selectedIndex].text;
+        console.log(tablevalue);
+
+        
+
     }
 
     
