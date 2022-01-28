@@ -65,34 +65,34 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 <a href = "/goal7">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/clean_energy.png"height="200" width="200" alt = "Clean Energy">
 	</a>
-<a href = "google.com">
+<a href = "/goal8">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/good_jobs.png"height="200" width="200" alt = "Good Jobs">
 	</a>
-<a href = "google.com">
+<a href = "/goal9">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/innovation.png"height="200" width="200" alt = "Innovation">
 	</a>	
-<a href = "google.com">
+<a href = "/goal10">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/reduced_inequality.png"height="200" width="200" alt = "Reduced Inequalities">
 	</a>
-<a href = "google.com">
+<a href = "/goal11">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/sustainable_cities.png"height="200" width="200" alt = "Sustainable Cities">
 	</a>	
-<a href = "google.com">
+<a href = "/goal12">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/responsible_consumption.png"height="200" width="200" alt = "Responsible Consumption">
 	</a>
-<a href = "google.com">
+<a href = "/goal13">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/protect_the_planet.png"height="200" width="200" alt = "Protect The Planet">
 	</a>
-<a href = "google.com">
+<a href = "/goal14">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/life_below_water.png"height="200" width="200" alt = "Life Below Water">
 	</a>
-<a href = "google.com">
+<a href = "/goal15">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/life_on_land.png"height="200" width="200" alt = "Life On Land">
 	</a>
-<a href = "google.com">
+<a href = "/goal16">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/peace_and_justice.png"height="200" width="200" alt = "Peace and Justice">
 		</a>
-<a href = "google.com">
+<a href = "/goal17">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/partnerships.png"height="200" width="200" alt = "Partnerships for the Goals">
 	</a>	
 </div>
