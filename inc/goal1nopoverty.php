@@ -50,29 +50,22 @@ include("dbconnect.php");
     </div>
 </div>
 <hr>
-<div class="row mt-3 px-5">
-    <div class="col">
-        <h4>Things to do</h4>
-        <?php
-        $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM nopovertyevents";
-        $result = $db->query($sql);
-
-        if ($result->num_rows > 0) {
-            // output data of each row
-            while($row = $result->fetch_assoc()) {
-                echo "<br> Name: ". $row["EventName"]. " Location:" . $row["EventLocation"] . " Contact:". $row["EventContact"]. " Description:". $row["EventDescription"]. "<br>";
-            }
-        } else {
-            echo "0 results";
-}
-
-$db->close();
-
-?>
-    </div>
-</div>
 </body>
 </html>
 
 <?php
+$sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM nopovertyevents";
+$result = $db->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> Name: ". $row["EventName"]. " Location:" . $row["EventLocation"] . " Contact:". $row["EventContact"]. " Description:". $row["EventDescription"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$db->close();
+
 ?>
