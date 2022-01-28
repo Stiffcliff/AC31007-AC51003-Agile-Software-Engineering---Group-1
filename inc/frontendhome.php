@@ -35,10 +35,10 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 <div class="main">
     
 	<a href = "google.com">
-        <img src="resources/no_poverty.png"height="150" width="150" alt = "No Poverty">
+        <img src="./resources/no_poverty.png"height="150" width="150" alt = "No Poverty">
 	</a>
 <a href = "google.com">
-        <img src="resources/no_hunger.png"height="150" width="150" alt = "No Hunger">
+        <img src="./resources/no_hunger.png"height="150" width="150" alt = "No Hunger">
 	</a>	
 <a href = "google.com">
         <img src="resources/good_health.png"height="150" width="150" alt = "Good Health">
@@ -50,7 +50,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
         <img src="./resources/gender_equality.png"height="150" width="150" alt = "Gender Equality">
 	</a>
 <a href = "google.com">
-        <img src="resources/clean_water.png"height="150" width="150" alt = "Clean Water">
+        <img src="https://github.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/tree/main/inc/resources/clean_water.png"height="150" width="150" alt = "Clean Water">
 	</a>
 <a href = "google.com">
         <img src="inc/resources/clean_energy.png"height="150" width="150" alt = "Clean Energy">
