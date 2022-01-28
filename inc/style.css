@@ -24,17 +24,16 @@ body
 	grid-template-rows: repeat(auto-fill,minmax(250px,250px));
 	grid-column-gap: 10px;
 	grid-row-gap:10px;
+}/*
+.main:hover img {
+	opacity:0.3;
 }
-
+*/
 img
 {
 	object-fit: cover;
 	object-position:center;
 }
-
-img:hover {
-	transform: scale(1.3);
-	}
 
 
 h2{
