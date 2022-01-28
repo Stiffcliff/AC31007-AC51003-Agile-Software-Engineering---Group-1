@@ -35,7 +35,31 @@ include("dbconnect.php");
     <option value="3">Remove</option>
 </select>
 
-<div id='addEverything'>
+
+    <div id='addEverything'>
+        <script> var addTableName </script>
+        <select name="adddrop" id="adddrop" onchange=addFunction(addTableName)>
+        <option hidden disabled selected value> -- select an option -- </option>
+            <option value="1">nopovertyevents</option> 
+            <option value="2">goal 2</option>
+            <option value="3">goal 3</option>
+            <option value="4">goal 4</option> 
+            <option value="5">goal 5</option>
+            <option value="6">goal 6</option>
+            <option value="7">goal 7</option> 
+            <option value="8">goal 8</option>
+            <option value="9">goal 9</option>
+            <option value="10">goal 10</option> 
+            <option value="11">goal 11</option>
+            <option value="12">goal 12</option>
+            <option value="13">goal 13</option> 
+            <option value="14">goal 14</option>
+            <option value="15">goal 15</option>
+            <option value="16">goal 16</option> 
+            <option value="17">goal 17</option>
+            
+        </select>
+    
     <form method="post" id="addForm">
         <div class="container-fluid" id="eventContainer">
             <div class="row justify-content-center">
@@ -163,7 +187,14 @@ include("dbconnect.php");
         var tablevalue = tableID.options[tableID.selectedIndex].text;
         console.log(tablevalue);
 
-        
+    }
+
+    Function addFunction(addTableName){
+        var addID = document.getElementById("adddrop");
+        var addvalue = addID.options[addID.selectedIndex].text;
+        console.log(addvalue);
+        return addTableName;
+
 
     }
 
