@@ -36,6 +36,7 @@
         <ul>Donate used books and resources to schools and kids groups.</ul>
     </div>
 </div>
+<hr>
 </body>
 </html>
 <?php

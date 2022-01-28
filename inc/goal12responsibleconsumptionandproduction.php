@@ -54,6 +54,7 @@
         </ul>
     </div>
 </div>
+<hr>
 </body>
 </html>
 <?php

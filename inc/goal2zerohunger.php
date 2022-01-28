@@ -40,6 +40,7 @@
         <ul>Consume less meat, eat more plant based.</ul>
     </div>
 </div>
+<hr>
 </body>
 </html>
 <?php

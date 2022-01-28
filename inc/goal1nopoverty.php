@@ -38,6 +38,7 @@
         <ul>Donate what you don't use to local charities or those in need</ul>
     </div>
 </div>
+<hr>
 </body>
 </html>
 <?php

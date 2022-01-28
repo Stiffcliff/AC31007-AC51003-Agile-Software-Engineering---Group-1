@@ -41,6 +41,7 @@
         <ul>Research and development (work in Dundee)</ul>
     </div>
 </div>
+<hr>
 </body>
 </html>
 <?php

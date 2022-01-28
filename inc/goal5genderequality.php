@@ -38,6 +38,7 @@
         <ul>Stand up against harrassment</ul>
     </div>
 </div>
+<hr>
 </body>
 </html>
 <?php
