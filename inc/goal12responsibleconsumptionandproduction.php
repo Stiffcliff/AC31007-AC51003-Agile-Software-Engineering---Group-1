@@ -54,9 +54,6 @@
     </div>
 </div>
 </body>
-<footer>
-    <h3>Footer</h3>
-</footer>
 </html>
 <?php
 ?>
