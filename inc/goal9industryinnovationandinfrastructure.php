@@ -47,6 +47,24 @@
 </div>
 <hr>
 </body>
-</html>
+<h4>Get involved locally</h4>
+
+
 <?php
+$sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM innovationevents";
+$result = $db->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> Name: ". $row["EventName"]. " Location:" . $row["EventLocation"] . " Contact:". $row["EventContact"]. " Description:". $row["EventDescription"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$db->close();
+
 ?>
+<hr>
+</html>
