@@ -185,14 +185,14 @@ include("dbconnect.php");
         var tableID = document.getElementById("tabledrop");
         var tablevalue = tableID.options[tableID.selectedIndex].text;
         console.log(tablevalue);
-
+        //need to pass tablevalue to php and mysql command to show the selected table - tablevalue="nopovertyevents" etc
     }
 
     function addFunction(){
         var addID = document.getElementById("adddrop");
         var addvalue = addID.options[addID.selectedIndex].text;
         console.log(addvalue);
-
+        //need to pass addvalue to php and mysql command to insert into selected table - addvalue="nopovertyevents" etc
     }
 
     
