@@ -191,6 +191,20 @@ include("dbconnect.php");
     function addFunction(){
         var addID = document.getElementById("adddrop");
         var addvalue = addID.options[addID.selectedIndex].text;
+        <?php
+            $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM nopovertyevents";
+            $result = $db->query($sql);
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                    echo "<br> Name: ". $row["EventName"]. " Location:" . $row["EventLocation"] . " Contact:". $row["EventContact"]. " Description:". $row["EventDescription"]. "<br>";
+                }
+            } else {
+                echo "0 results";
+            }
+            
+            $db->close();
+        ?>
         console.log(addvalue);
         //need to pass addvalue to php and mysql command to insert into selected table - addvalue="nopovertyevents" et
     }
