@@ -38,52 +38,52 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/no_poverty.png"height="150" width="150" alt = "No Poverty">
 	</a>
 <a href = "google.com">
-        <img src="./resources/no_hunger.png"height="150" width="150" alt = "No Hunger">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/no_hunger.png"height="150" width="150" alt = "No Hunger">
 	</a>	
 <a href = "google.com">
-        <img src="resources/good_health.png"height="150" width="150" alt = "Good Health">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/good_health.png"height="150" width="150" alt = "Good Health">
 	</a>
 <a href = "google.com">
-        <img src="resources\quality_education.png"height="150" width="150" alt = "Quality Education">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/quality_education.png"height="150" width="150" alt = "Quality Education">
 	</a>	
 <a href = "google.com">
-        <img src="./resources/gender_equality.png"height="150" width="150" alt = "Gender Equality">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/gender_equality.png"height="150" width="150" alt = "Gender Equality">
 	</a>
 <a href = "google.com">
-        <img src="https://github.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/tree/main/inc/resources/clean_water.png"height="150" width="150" alt = "Clean Water">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/clean_water.png"height="150" width="150" alt = "Clean Water">
 	</a>
 <a href = "google.com">
-        <img src="inc/resources/clean_energy.png"height="150" width="150" alt = "Clean Energy">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/clean_energy.png"height="150" width="150" alt = "Clean Energy">
 	</a>
 <a href = "google.com">
-        <img src="resources/good_jobs.png"height="150" width="150" alt = "Good Jobs">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/good_jobs.png"height="150" width="150" alt = "Good Jobs">
 	</a>
 <a href = "google.com">
-        <img src="resources/innovation.png"height="150" width="150" alt = "Innovation">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/innovation.png"height="150" width="150" alt = "Innovation">
 	</a>	
 <a href = "google.com">
-        <img src="resources/reduced_inequality.png"height="150" width="150" alt = "Reduced Inequalities">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/reduced_inequality.png"height="150" width="150" alt = "Reduced Inequalities">
 	</a>
 <a href = "google.com">
-        <img src="resources/sustainable_cities.png"height="150" width="150" alt = "Sustainable Cities">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/sustainable_cities.png"height="150" width="150" alt = "Sustainable Cities">
 	</a>	
 <a href = "google.com">
-        <img src="resources/responsible_consumption.png"height="150" width="150" alt = "Responsible Consumption">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/responsible_consumption.png"height="150" width="150" alt = "Responsible Consumption">
 	</a>
 <a href = "google.com">
-        <img src="resources/protect_the_planet.png"height="150" width="150" alt = "Protect The Planet">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/protect_the_planet.png"height="150" width="150" alt = "Protect The Planet">
 	</a>
 <a href = "google.com">
-        <img src="resources/life_below_water.png"height="150" width="150" alt = "Life Below Water">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/life_below_water.png"height="150" width="150" alt = "Life Below Water">
 	</a>
 <a href = "google.com">
-        <img src="resources/life_on_land.png"height="150" width="150" alt = "Life On Land">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/life_on_land.png"height="150" width="150" alt = "Life On Land">
 	</a>
 <a href = "google.com">
-        <img src="resources/peace_and_justice.png"height="150" width="150" alt = "Peace and Justice">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/peace_and_justice.png"height="150" width="150" alt = "Peace and Justice">
 		</a>
 <a href = "google.com">
-        <img src="resources/partnerships.png"height="150" width="150" alt = "Partnerships for the Goals">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/partnerships.png"height="150" width="150" alt = "Partnerships for the Goals">
 	</a>		
   
 </div>
