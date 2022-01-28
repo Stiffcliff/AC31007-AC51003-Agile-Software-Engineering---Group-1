@@ -51,6 +51,7 @@ include("dbconnect.php");
 </div>
 <hr>
 </body>
+<h4>Get involved locally</h4>
 </html>
 
 <?php
