@@ -189,7 +189,9 @@ include("dbconnect.php");
     }
 
     function addFunction(){
-        console.log("hello");
+        var addID = document.getElementById("adddrop");
+        var addvalue = addID.options[addID.selectedIndex].text;
+        console.log(addvalue);
 
     }
 
