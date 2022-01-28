@@ -9,6 +9,7 @@ body
 	min-height: 100vh;
 	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
+	margin: 15px;
 }
 
 .main 
@@ -23,22 +24,51 @@ body
 	grid-template-rows: repeat(auto-fill,minmax(250px,250px));
 	grid-column-gap: 10px;
 	grid-row-gap:10px;
-	
-	
+}/*
+.main:hover img {
+	opacity:0.3;
 }
-
+*/
 img
 {
-	width: 200px;
-	height: 200px;
 	object-fit: cover;
 	object-position:center;
-	
 }
 
 
-h1{
-	colour: yellow;
-	font-size:60px;
+h2{
+	font: size 25px;
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	text-transform: uppercase;
+}
+
+p{
+	font: 15px;
+	color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav > ul {
+	background-color: #049a9b;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.nav>ul>li{
+	float:left
+}
+
+.nav>ul>li>a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+
+.nav>ul>li>a:hover {
+	background-color: #06d7d9 ;
 }
