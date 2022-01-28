@@ -170,7 +170,7 @@ include("dbconnect.php");
             removeEverythingControl.style.display = "none";
         }
         
-        if (dropdownvalue == "1") {
+        if (dropdownvalue == "0") {
             addEverythingControl.style.display = "block";
             editEverythingControl.style.display = "none";
             removeEverythingControl.style.display = "none";
