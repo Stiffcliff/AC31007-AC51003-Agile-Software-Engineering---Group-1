@@ -44,25 +44,3 @@ h1{
 }
 
 
-.topOff{
-    margin-top: 25px;
-}
-
-.fixedArea {
-    position: fixed;
-    background: #049a9b;
-    border-bottom: 5px solid #f9c513;
-}
-.myNavbar{
-    background-color: transparent;
-    border: 0px;
-}
-
-.myNavUl > li >a {
-    padding-top: 10px;
-    padding: 10px 20px;
-    font-size: 12pt;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-}
