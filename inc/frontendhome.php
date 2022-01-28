@@ -34,7 +34,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 </div>
 <div class="main">
     
-<a href = "/goal1nopoverty.php">
+<a href = "/goal1nopoverty">
         <img src="resources/no_poverty.png"height="150" width="150" alt = "No Poverty">
 	</a>
 <a href = "google.com">
