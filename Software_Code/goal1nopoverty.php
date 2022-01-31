@@ -14,13 +14,11 @@ include("dbconnect.php");
 
     <nav class = "nav">
     <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <!--
-        <li><a href="#contact"></a></li>
-        <li><a href="#about">About</a></li>
--->
+        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="#contact us">Contact Us</a></li>
     </ul>    
     </nav>
+
 </head>
 <body>
 <div class="row">
