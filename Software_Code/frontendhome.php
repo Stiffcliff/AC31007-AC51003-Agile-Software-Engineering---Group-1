@@ -76,7 +76,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/responsible_consumption.png"height="200" width="200" alt = "Responsible Consumption">
 	</a>
 <a href = "/goal13">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Codenc/resources/protect_the_planet.png"height="200" width="200" alt = "Protect The Planet">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/protect_the_planet.png"height="200" width="200" alt = "Protect The Planet">
 	</a>
 <a href = "/goal14">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/life_below_water.png"height="200" width="200" alt = "Life Below Water">
