@@ -1,4 +1,5 @@
 <?php
+include("dbconnect.php"); 
 ?>
 <html>
 <head>
@@ -7,17 +8,14 @@
     <meta name="robots" value="noindex,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/style.css"/>
+    <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    
     <nav class = "nav">
     <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <!--
-        <li><a href="#contact"></a></li>
-        <li><a href="#about">About</a></li>
--->
+        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="#contact us">Contact Us</a></li>
     </ul>    
     </nav>
 </head>
@@ -30,22 +28,18 @@
 <hr>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
-        <h3>Goal 11: Sustainable Cities and Communities (Incl. Sustainable Transport)</h3>
+        <h3>Goal 5: Gender Equality</h3>
         <p>
-          Make cities and human settlements inclusive, safe, resilient and sustainable.
+          Achieve gender equality and empower all women and girls.
         </p>
     </div>
 </div>
 <div class="row mt-3 px-5">
     <div class="col">
         <h4>Things to do</h4>
-        <ul>Shop locally. Supporting local businesses keeps people employed and circulates money back in to the local community. </ul>
-        <ul>
-        Travel sustainably - bike, walk or take public transport.
-        </ul>
-        <ul>
-          Take care of public spaces. Organise clean ups, plant trees, renovate. 
-        </ul>
+        <ul>Voice your support for equal pay for equal work.</ul>
+        <ul>Be aware of gender stereotypes</ul>
+        <ul>Stand up against harrassment</ul>
     </div>
 </div>
 <hr>
@@ -54,7 +48,7 @@
 
 
 <?php
-$sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM sustainablevents";
+$sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM gendereduevents";
 $result = $db->query($sql);
 
 if ($result->num_rows > 0) {

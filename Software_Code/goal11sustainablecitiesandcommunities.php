@@ -1,4 +1,5 @@
 <?php
+include("dbconnect.php"); 
 ?>
 <html>
 <head>
@@ -7,17 +8,14 @@
     <meta name="robots" value="noindex,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/style.css"/>
+    <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <nav class = "nav">
     <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/inc/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <!--
-        <li><a href="#contact"></a></li>
-        <li><a href="#about">About</a></li>
--->
+        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="#contact">Contact Us</a></li>
     </ul>    
     </nav>
 </head>
@@ -30,24 +28,21 @@
 <hr>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
-        <h3>Goal 8: Decent Work and Economic Growth (Green economy, sustainable tourism)</h3>
+        <h3>Goal 11: Sustainable Cities and Communities (Incl. Sustainable Transport)</h3>
         <p>
-          Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all
+          Make cities and human settlements inclusive, safe, resilient and sustainable.
         </p>
     </div>
 </div>
 <div class="row mt-3 px-5">
     <div class="col">
         <h4>Things to do</h4>
-        <ul>Invite people with experience in a certain field to create a mentoring group that will help young people better prepare for their future jobs.</ul>
+        <ul>Shop locally. Supporting local businesses keeps people employed and circulates money back in to the local community. </ul>
         <ul>
-          Be a conscious consumer - if something is cheap is it likely to be hurting people or the planet in some way.
+        Travel sustainably - bike, walk or take public transport.
         </ul>
         <ul>
-          Buy from local producers
-        </ul>
-        <ul>
-          Support local economic growth by choosing to buy from local businesses
+          Take care of public spaces. Organise clean ups, plant trees, renovate. 
         </ul>
     </div>
 </div>
@@ -57,7 +52,7 @@
 
 
 <?php
-$sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM ecogrowevents";
+$sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM sustainablevents";
 $result = $db->query($sql);
 
 if ($result->num_rows > 0) {
