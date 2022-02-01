@@ -31,7 +31,7 @@ include("dbconnect.php");
 
 <select name="dropdown" id="dropdown" onchange=choiceFunction()>
     <option hidden disabled selected value> -- select an option -- </option>
-    <option value="1">Add</option> 
+    <option value="1">Add</option>
     <option value="2">Edit</option>
     <option value="3">Remove</option>
 </select>
@@ -58,11 +58,35 @@ include("dbconnect.php");
             <option value="15">goal 15</option>
             <option value="16">goal 16</option> 
             <option value="17">goal 17</option>
-            </select>
+        </select>
     
         <form method="post" id="addForm">
             <div class="container-fluid" id="eventContainer">
                 <div class="row justify-content-center">
+                    <div class="row">
+                        <div class="col">
+                            <select name="table">
+                                <option hidden disabled selected value>Select table name</option>
+                                <option value="nopovertyevents">nopovertyevents - Goal 1</option>
+                                <option value="zerohungerevents">zerohungerevents - Goal 2</option>
+                                <option value="goodhealthevents">goodhealthevents - Goal 3</option>
+                                <option value="4">goal 4</option>
+                                <option value="5">goal 5</option>
+                                <option value="6">goal 6</option>
+                                <option value="7">goal 7</option>
+                                <option value="8">goal 8</option>
+                                <option value="9">goal 9</option>
+                                <option value="10">goal 10</option>
+                                <option value="11">goal 11</option>
+                                <option value="12">goal 12</option>
+                                <option value="13">goal 13</option>
+                                <option value="14">goal 14</option>
+                                <option value="15">goal 15</option>
+                                <option value="16">goal 16</option>
+                                <option value="17">goal 17</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <input type="text" id="eventName" name="eventName" class="form-control" placeholder="Name" required>
@@ -100,27 +124,32 @@ include("dbconnect.php");
     <h1>Remove</h1>
 </div>
 
-<select name="tabledrop" id="tabledrop" onchange=tableFunction()>
-<option hidden disabled selected value> -- select an option -- </option>
-    <option value="1">nopovertyevents</option> 
-    <option value="2">goal 2</option>
-    <option value="3">goal 3</option>
-    <option value="4">goal 4</option> 
-    <option value="5">goal 5</option>
-    <option value="6">goal 6</option>
-    <option value="7">goal 7</option> 
-    <option value="8">goal 8</option>
-    <option value="9">goal 9</option>
-    <option value="10">goal 10</option> 
-    <option value="11">goal 11</option>
-    <option value="12">goal 12</option>
-    <option value="13">goal 13</option> 
-    <option value="14">goal 14</option>
-    <option value="15">goal 15</option>
-    <option value="16">goal 16</option> 
-    <option value="17">goal 17</option>
-    
-</select>
+<form method="post" id="displayForm">
+    <select name="tabledrop" id="tabledrop">
+        <option hidden disabled selected value> Select a table </option>
+        <option value="1">nopovertyevents - Goal 1</option>
+        <option value="2">zerohungerevents - Goal 2</option>
+        <option value="3">goodhealthevents - Goal 3</option>
+        <option value="4">goal 4</option>
+        <option value="5">goal 5</option>
+        <option value="6">goal 6</option>
+        <option value="7">goal 7</option>
+        <option value="8">goal 8</option>
+        <option value="9">goal 9</option>
+        <option value="10">goal 10</option>
+        <option value="11">goal 11</option>
+        <option value="12">goal 12</option>
+        <option value="13">goal 13</option>
+        <option value="14">goal 14</option>
+        <option value="15">goal 15</option>
+        <option value="16">goal 16</option>
+        <option value="17">goal 17</option>
+    </select>
+    <div class="col text-center">
+        <input type="submit" name="submitDisplay" value="Display table">
+        <!--        <button type="submit" name="insert" class="btn btn-secondary btn-lg">Add Record</button>-->
+    </div>
+</form>
 
 <div id='list'>
 </div>
@@ -130,12 +159,13 @@ include("dbconnect.php");
 
     if ( isset( $_POST['submit'] ) ) {
 
+        $EventTable = $_POST['eventTable'];
         $EventName = $_POST['eventName'];
         $EventLocation = $_POST['eventLocation'];
         $EventContact = $_POST['eventContact'];
         $EventDescription = $_POST['eventDescription'];
 
-        $fullInsert = "INSERT INTO `nopovertyevents` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES (NULL,'$EventName','$EventLocation','$EventContact','$EventDescription')";
+        $fullInsert = "INSERT INTO '$EventTable' (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES (NULL,'$EventName','$EventLocation','$EventContact','$EventDescription')";
 
         $db->query($fullInsert);
 
@@ -190,7 +220,7 @@ include("dbconnect.php");
 
     function addFunction(){
         var addID = document.getElementById("adddrop");
-        var addvalue = addID.options[addID.selectedIndex].text;z
+        var addvalue = addID.options[addID.selectedIndex].text;
         console.log(addvalue);
         //need to pass addvalue to php and mysql command to insert into selected table - addvalue="nopovertyevents" et
     }
@@ -200,19 +230,22 @@ include("dbconnect.php");
 </script>
 
 <?php
-$sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM nopovertyevents";
-$result = $db->query($sql);
+if ( isset( $_POST['submitDisplay'] ) ) {
+    $tableName = $_POST['tabledrop'];
+    $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM '$tableName'";
+    $result = $db->query($sql);
 
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<br> ID:". $row["EventName"]. " Name:". $row["EventName"]. " Location:" . $row["EventLocation"] . " Contact:". $row["EventContact"]. " Description:". $row["EventDescription"]. "<br>";
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+            echo "<br> ID:" . $row["EventName"] . " Name:" . $row["EventName"] . " Location:" . $row["EventLocation"] . " Contact:" . $row["EventContact"] . " Description:" . $row["EventDescription"] . "<br>";
+        }
+    } else {
+        echo "0 results";
     }
-} else {
-    echo "0 results";
-}
 
-$db->close();
+    $db->close();
+}
 
 ?>
 
