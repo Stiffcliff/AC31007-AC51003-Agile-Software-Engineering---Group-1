@@ -165,7 +165,7 @@ include("dbconnect.php");
         $EventContact = $_POST['eventContact'];
         $EventDescription = $_POST['eventDescription'];
 
-        $fullInsert = "INSERT INTO '$EventTable' (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES (NULL,'$EventName','$EventLocation','$EventContact','$EventDescription')";
+        $fullInsert = "INSERT INTO `$EventTable` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES (NULL,'$EventName','$EventLocation','$EventContact','$EventDescription')";
 
         echo $fullInsert;
 
