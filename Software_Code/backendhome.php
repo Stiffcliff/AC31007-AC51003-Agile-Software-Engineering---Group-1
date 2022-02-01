@@ -65,7 +65,7 @@ include("dbconnect.php");
                 <div class="row justify-content-center">
                     <div class="row">
                         <div class="col">
-                            <select name="eventTable">
+                            <select name="eventTable" id="eventTable">
                                 <option hidden disabled selected value>Select table name</option>
                                 <option value="nopovertyevents">nopovertyevents - Goal 1</option>
                                 <option value="zerohungerevents">zerohungerevents - Goal 2</option>
@@ -127,9 +127,9 @@ include("dbconnect.php");
 <form method="post" id="displayForm">
     <select name="tabledrop" id="tabledrop">
         <option hidden disabled selected value> Select a table </option>
-        <option value="1">nopovertyevents - Goal 1</option>
-        <option value="2">zerohungerevents - Goal 2</option>
-        <option value="3">goodhealthevents - Goal 3</option>
+        <option value="nopovertyevents">nopovertyevents - Goal 1</option>
+        <option value="zerohungerevents">zerohungerevents - Goal 2</option>
+        <option value="goodhealthevents">goodhealthevents - Goal 3</option>
         <option value="4">goal 4</option>
         <option value="5">goal 5</option>
         <option value="6">goal 6</option>
@@ -166,6 +166,8 @@ include("dbconnect.php");
         $EventDescription = $_POST['eventDescription'];
 
         $fullInsert = "INSERT INTO '$EventTable' (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES (NULL,'$EventName','$EventLocation','$EventContact','$EventDescription')";
+
+        echo $fullInsert;
 
         $db->query($fullInsert);
 
