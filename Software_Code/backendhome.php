@@ -65,7 +65,7 @@ include("dbconnect.php");
                 <div class="row justify-content-center">
                     <div class="row">
                         <div class="col">
-                            <select name="table">
+                            <select name="eventTable">
                                 <option hidden disabled selected value>Select table name</option>
                                 <option value="nopovertyevents">nopovertyevents - Goal 1</option>
                                 <option value="zerohungerevents">zerohungerevents - Goal 2</option>
