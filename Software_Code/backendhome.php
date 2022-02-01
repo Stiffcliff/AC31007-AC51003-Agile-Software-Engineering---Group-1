@@ -234,7 +234,7 @@ include("dbconnect.php");
 <?php
 if ( isset( $_POST['submitDisplay'] ) ) {
     $tableName = $_POST['tabledrop'];
-    $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM '$tableName'";
+    $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM `$tableName`";
     $result = $db->query($sql);
 
     if ($result->num_rows > 0) {
