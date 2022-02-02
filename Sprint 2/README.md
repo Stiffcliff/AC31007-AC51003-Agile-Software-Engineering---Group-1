@@ -36,7 +36,7 @@ Issues/Blockers:
 
 ---
 
-## Day [1] - Scrum Meeting summary
+## Day [2] - Scrum Meeting summary
 The Scrum Master for this meeting was Jason Beesla
 
 ### Members Present:
