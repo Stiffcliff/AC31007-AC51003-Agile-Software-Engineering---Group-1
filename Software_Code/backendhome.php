@@ -284,8 +284,7 @@ if ( isset( $_POST['submitEdit'] ) ) {
     $EventDescription = $_POST['eventDescription'];
 
     $fullDelete = "DELETE FROM `$EventTable` WHERE EventID=$EventId";
-    $db->query($fullDelete);
-
+    
     $fullInsert = "INSERT INTO `$EventTable` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES ('$EventID','$EventName','$EventLocation','$EventContact','$EventDescription')";
     
     $sql = "$fullDelete;
