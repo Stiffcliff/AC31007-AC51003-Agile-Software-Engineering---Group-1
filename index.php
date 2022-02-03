@@ -7,7 +7,7 @@ $rules = array(
     //API Routes
     'backendhome' => "/backend",
     'apiShowEvents' => "/table",
-
+    'contactus' => "/contactus",
 
 
     //Admin Pages
