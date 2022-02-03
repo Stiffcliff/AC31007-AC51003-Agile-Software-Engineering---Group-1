@@ -287,10 +287,8 @@ if ( isset( $_POST['submitEdit'] ) ) {
     
     $fullInsert = "INSERT INTO `$EventTable` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES ('$EventID','$EventName','$EventLocation','$EventContact','$EventDescription')";
     
-    $sql = "$fullDelete;
-            $fullInsert;"
-    
-    $db->multi_query($sql);
+    $db->query($fullDelete);
+    $db->query($fullInsert);
 
     readfile("backendhome.php");
 }
