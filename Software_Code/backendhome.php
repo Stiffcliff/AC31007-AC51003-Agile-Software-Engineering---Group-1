@@ -284,15 +284,13 @@ if ( isset( $_POST['submitEdit'] ) ) {
     $EventDescription = $_POST['eventDescription'];
 
     $fullDelete = "DELETE FROM `$EventTable` WHERE EventID=$EventId";
-    $db->query($fullDelete);
-
-    echo $fullDelete;
-
+    
     $fullInsert = "INSERT INTO `$EventTable` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES ('$EventID','$EventName','$EventLocation','$EventContact','$EventDescription')";
     
-    echo $fullInsert;
-
-    $db->query($fullInsert);
+    $sql = "$fullDelete;
+            $fullInsert;"
+    
+    $db->multi_query($sql);
 
     readfile("backendhome.php");
 }
