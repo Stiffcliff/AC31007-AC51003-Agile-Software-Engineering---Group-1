@@ -22,7 +22,9 @@ include("dbconnect.php");
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+        <br>
         <h2>Making Dundee A Better Place</h2>
+        <br>
     </div>
 </div>
 <hr>
@@ -37,16 +39,23 @@ include("dbconnect.php");
 <div class="row mt-3 px-5">
     <div class="col">
         <h4>Things to do</h4>
+        <br>
         <ul>Buy local and in-season food.</ul>
+        <br>
         <ul>Try growing some of your own food</ul>
+        <br>
         <ul>Don't waste food</ul>
+        <br>
         <ul>Buy "funny fruit" many fruits and vegetables are thrown out because their size, shape, or color are not “right”. Buying these perfectly good funny fruit, utilizes food that might otherwise go to waste.</ul>
+        <br>
         <ul>Consume less meat, eat more plant based.</ul>
+        <br>
     </div>
 </div>
 <hr>
 </body>
 <h4>Get involved locally</h4>
+<br>
 
 
 <?php

@@ -22,7 +22,9 @@ include("dbconnect.php");
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+        <br>
         <h2>Making Dundee A Better Place</h2>
+        <br>
     </div>
 </div>
 <hr>
@@ -37,25 +39,31 @@ include("dbconnect.php");
 <div class="row mt-3 px-5">
     <div class="col">
         <h4>Things to do</h4>
+        <br>
         <ul>Never buy bottled water – boil, filter, chlorine, rainwater, do what you can.</ul>
+        <br>
         <ul>
           Reduce waste - lots of the waste we produce on land ends up in the sea.
         </ul>
+        <br>
         <ul>
           Stop using single use plastics wherever possible.
         </ul>
+        <br>
         <ul>
           Organise clean ups
         </ul>
+        <br>
         <ul>
           Buy local and certified fish - support small scale producers. 
         </ul>
+        <br>
     </div>
 </div>
 <hr>
 </body>
 <h4>Get involved locally</h4>
-
+<br>
 
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM lifebelowevents";

@@ -7,7 +7,7 @@ include("dbconnect.php");
     <meta charset="UTF-8">
     <meta name="robots" value="noindex,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Sofware_Code/style.css"/>
+    <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
@@ -21,7 +21,9 @@ include("dbconnect.php");
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+        <br>
         <h2>Making Dundee A Better Place</h2>
+        <br>
     </div>
 </div>
 <hr>
@@ -36,22 +38,27 @@ include("dbconnect.php");
 <div class="row mt-3 px-5">
     <div class="col">
         <h4>Things to do</h4>
+        <br>
         <ul>Invite people with experience in a certain field to create a mentoring group that will help young people better prepare for their future jobs.</ul>
+        <br>
         <ul>
           Be a conscious consumer - if something is cheap is it likely to be hurting people or the planet in some way.
         </ul>
+        <br>
         <ul>
           Buy from local producers
         </ul>
+        <br>
         <ul>
           Support local economic growth by choosing to buy from local businesses
         </ul>
+        <br>
     </div>
 </div>
 <hr>
 </body>
 <h4>Get involved locally</h4>
-
+<br>
 
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM ecogrowevents";

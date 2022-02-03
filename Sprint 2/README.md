@@ -40,10 +40,10 @@ Issues/Blockers:
 The Scrum Master for this meeting was Jason Beesla
 
 ### Members Present:
-Jason Beesla, Leia Ainscough, Ivan Amigo, Andrej Kocak and Bernard Aihevba
+Jason Beesla, Leia Ainscough, Ivan Amigo and Andrej Kocak
 
 ### Members Not Present:
-
+Bernard Aihevba
 
 ### Apologies:
 Cameron Sutcliff - University football match
@@ -64,5 +64,37 @@ Things we need to do over next 24 hours:
 
 Issues/Blockers:
 - Andrej has had issues with getting data from javascript to php
+
+---
+
+## Day [3] - Scrum Meeting summary
+The Scrum Master for this meeting was Jason Beesla
+
+### Members Present:
+Jason Beesla, Cameron Sutcliffe, Leia Ainscough, Ivan Amigo, Andrej Kocak and Bernard Aihevba
+
+### Members Not Present:
+
+
+### Apologies:
+
+
+### Summary of Conversation:
+Things we did:
+- Jason attempted to test the contact us page and resolve the errors the IDE was throwing out
+- Bernard and Leia added all of the coordinates to the base map
+- Andrej completed the deleting and adding functionality
+- Ivan implemented the bootstrap on the front page
+
+Things we need to do over next 24 hours:
+- Bernard and Leia are planning to add the map to each individual pages.
+- Cameron is going to combine the add and remove function to create an edit function
+- Ivan is going to further improve the styling on the front page, and fix the nav bar.
+- Jason is going to start the meeting planning
+- Andrej is going to do a code review on Cameron's work
+
+Issues/Blockers:
+- An issue we faced was that since the repo was public the Sendgrid API did not like this and suspended the account we used for the contact us page, we then made the repository private which then caused other things to break.
+- The nav bar has become half size, and we are unsure as to what has caused this issue.
 
 ---

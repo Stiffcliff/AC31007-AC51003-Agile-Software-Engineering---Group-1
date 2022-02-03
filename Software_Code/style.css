@@ -9,6 +9,7 @@ body {
 	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
 	margin: 15px;
+	background-color: #D6F8F6;
 }
 
 .main {
@@ -57,11 +58,13 @@ ul {
 	font-family: 'Montserrat', sans-serif;
 }
 
+
 .nav > ul {
 	background-color: #33A9D0;
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
+	width: 100%;
 }
 
 
@@ -82,5 +85,4 @@ ul {
 .nav> ul > li > a:hover {
 	background-color: #68D9FE ;
 }
-
 

@@ -21,7 +21,9 @@ include("dbconnect.php");
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+        <br>
         <h2>Making Dundee A Better Place</h2>
+        <br>
     </div>
 </div>
 <hr>
@@ -36,25 +38,31 @@ include("dbconnect.php");
 <div class="row mt-3 px-5">
     <div class="col">
         <h4>Things to do</h4>
+        <br>
         <ul>Don't buy products tested on animals</ul>
+        <br>
         <ul>
           Don't shop for pets - adopt them from your local animal shelter.
         </ul>
+        <br>
         <ul>
           Recycle paper, glass, plastic, metal and old electronics.
         </ul>
+        <br>
         <ul>
           Compost
         </ul>
+        <br>
         <ul>
           Clean your local parks and forests
         </ul>
+        <br>
     </div>
 </div>
 <hr>
 </body>
 <h4>Get involved locally</h4>
-
+<br>
 
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM lifeonlandevents";
