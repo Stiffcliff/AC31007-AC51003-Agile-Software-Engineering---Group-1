@@ -22,7 +22,9 @@ include("dbconnect.php");
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+        <br>
         <h2>Making Dundee A Better Place</h2>
+        <br>
     </div>
 </div>
 <hr>
@@ -37,31 +39,39 @@ include("dbconnect.php");
 <div class="row mt-3 px-5">
     <div class="col">
         <h4>Things to do</h4>
+        <br>
         <ul>Shop locally. Supporting local businesses keeps people employed and circulates money back in to the local community.</ul>
+        <br>
         <ul>
           Be conscious of packaging - the less the better
         </ul>
+        <br>
         <ul>
           Buy from companies with sustainable practices and don't harm the environment.
         </ul>
+        <br>
         <ul>
           Buy second hand whenever you can
         </ul>
+        <br>
         <ul>
           Make use of food sharing apps to reduce the amount of food waste you produce
         </ul>
+        <br>
         <ul>
           Choose reusable products - reusable water bottle, eco-bsgs for shopping.
         </ul>
+        <br>
         <ul>
           Join petitions and campaigns calling out businesses with unsustainable practices.
         </ul>
+        <br>
     </div>
 </div>
 <hr>
 </body>
 <h4>Get involved locally</h4>
-
+<br>
 
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM resconsevents";

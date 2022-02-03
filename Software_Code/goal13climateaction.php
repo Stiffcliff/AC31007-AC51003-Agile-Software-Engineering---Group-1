@@ -22,7 +22,9 @@ include("dbconnect.php");
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+        <br>
         <h2>Making Dundee A Better Place</h2>
+        <br>
     </div>
 </div>
 <hr>
@@ -37,28 +39,35 @@ include("dbconnect.php");
 <div class="row mt-3 px-5">
     <div class="col">
         <h4>Things to do</h4>
+        <br>
         <ul>Compost</ul>
+        <br>
         <ul>
         Choose reusable products
         </ul>
+        <br>
         <ul>
           Buy eco-friendly products
         </ul>
+        <br>
         <ul>
           Bike, walk or take public transport
         </ul>
+        <br>
         <ul>
           Consume less meat and animal products
         </ul>
+        <br>
         <ul>
           Reduce your use of paper
         </ul>
+        <br>
     </div>
 </div>
 <hr>
 </body>
 <h4>Get involved locally</h4>
-
+<br>
 
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM protectevents";
