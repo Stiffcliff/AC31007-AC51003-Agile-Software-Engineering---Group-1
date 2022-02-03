@@ -95,7 +95,7 @@ include("dbconnect.php");
     </div>
 
 <div id='editEverything'>
-<h1>Remove</h1>
+<h1>Edit</h1>
     <form method="post" id="editForm">
         <div class="container-fluid" id="eventContainer">
             <div class="row justify-content-center">
@@ -286,13 +286,12 @@ if ( isset( $_POST['submitEdit'] ) ) {
     $fullDelete = "DELETE FROM `$EventTable` WHERE EventID=$EventId";
     $db->query($fullDelete);
 
+    echo $fullDelete;
 
     $fullInsert = "INSERT INTO `$EventTable` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES ('$EventID','$EventName','$EventLocation','$EventContact','$EventDescription')";
-
-    echo $fullDelete;
+    
     echo $fullInsert;
 
-    $db->query($fullDelete);
     $db->query($fullInsert);
 
     readfile("backendhome.php");
