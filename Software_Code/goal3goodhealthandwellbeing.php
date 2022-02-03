@@ -24,6 +24,7 @@ include("dbconnect.php");
     <div class="col d-flex justify-content-center">
         <br>
         <h2>Making Dundee A Better Place</h2>
+        <br>
     </div>
 </div>
 <hr>
