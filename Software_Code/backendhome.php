@@ -95,12 +95,70 @@ include("dbconnect.php");
     </div>
 
 <div id='editEverything'>
-    <h1>EDIT</h1>
+<h1>Remove</h1>
+    <form method="post" id="editForm">
+        <div class="container-fluid" id="eventContainer">
+            <div class="row justify-content-center">
+                <div class="row">
+                    <div class="col">
+                        <select name="eventTable" id="eventTable">
+                            <option hidden disabled selected value> Select table name</option>
+                            <option value="nopovertyevents">nopovertyevents - Goal 1</option>
+                            <option value="zerohungerevents">zerohungerevents - Goal 2</option>
+                            <option value="goodhealthevents">goodhealthevents - Goal 3</option>
+                            <option value="qualityeduevents">qualityeduevents - Goal 4</option>
+                            <option value="genderequalityevents">genderequalityevents - Goal 5</option>
+                            <option value="cleanwaterevents">cleanwaterevents - Goal 6</option>
+                            <option value="cleanenergyevents">cleanenergyevents - Goal 7</option>
+                            <option value="ecogrowthevents">ecogrowthevents - Goal 8</option>
+                            <option value="innovationevents">innovationevents - Goal 9</option>
+                            <option value="inequalevents">inequalevents - Goal 10</option>
+                            <option value="sustainableevents">sustainableevents - Goal 11</option>
+                            <option value="resconsevents">resconsevents - Goal 12</option>
+                            <option value="protectevents">protectevents - Goal 13</option>
+                            <option value="lifebelowevents">lifebelowevents - Goal 14</option>
+                            <option value="lifeonlandevents">lifeonlandevents - Goal 15</option>
+                            <option value="peaceevents">peaceevents - Goal 16</option>
+                            <option value="partnerevents">partnerevents - Goal 17</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="eventId" name="eventId" class="form-control" placeholder="Event ID" required>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="eventName" name="eventName" class="form-control" placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="eventLocation" name="eventLocation" class="form-control" placeholder="Location" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="eventContact" name="eventContact" class="form-control" placeholder="Contact" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="eventDescription" name="eventDescription" class="form-control" placeholder="Description" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <input type="submit" name="submitEdit" value="Submit edit">
+        </div>
+    </form>
 </div>
 
 <div id='removeEverything'>
     <h1>Remove</h1>
-    <form method="post" id="addForm">
+    <form method="post" id="removeForm">
         <div class="container-fluid" id="eventContainer">
             <div class="row justify-content-center">
                 <div class="row">
@@ -135,7 +193,7 @@ include("dbconnect.php");
             </div>
         </div>
         <div class="col text-center">
-            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submitRemove" value="Submit delete">
         </div>
     </form>
 </div>
@@ -198,12 +256,44 @@ if ( isset( $_POST['submitRemove'] ) ) {
 
     $EventTable = $_POST['eventTable'];
     $EventId = intval($_POST['eventId']);
+    $EventName = $_POST['eventName'];
+    $EventLocation = $_POST['eventLocation'];
+    $EventContact = $_POST['eventContact'];
+    $EventDescription = $_POST['eventDescription'];
 
     $fullDelete = "DELETE FROM `$EventTable` WHERE EventID=$EventId";
+    $db->query($fullDelete);
 
     echo $fullDelete;
 
+
+    readfile("backendhome.php");
+}
+?>
+
+<?php
+include "dbconnect.php";
+
+if ( isset( $_POST['submitEdit'] ) ) {
+
+    $EventTable = $_POST['eventTable'];
+    $EventId = intval($_POST['eventId']);
+    $EventName = $_POST['eventName'];
+    $EventLocation = $_POST['eventLocation'];
+    $EventContact = $_POST['eventContact'];
+    $EventDescription = $_POST['eventDescription'];
+
+    $fullDelete = "DELETE FROM `$EventTable` WHERE EventID=$EventId";
     $db->query($fullDelete);
+
+
+    $fullInsert = "INSERT INTO `$EventTable` (`EventID`, `EventName`, `EventLocation`, `EventContact`, `EventDescription`) VALUES ('$EventID','$EventName','$EventLocation','$EventContact','$EventDescription')";
+
+    echo $fullDelete;
+    echo $fullInsert;
+
+    $db->query($fullDelete);
+    $db->query($fullInsert);
 
     readfile("backendhome.php");
 }
