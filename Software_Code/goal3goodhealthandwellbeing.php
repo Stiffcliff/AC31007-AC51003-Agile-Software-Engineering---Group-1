@@ -22,6 +22,7 @@ include("dbconnect.php");
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+        <br>
         <h2>Making Dundee A Better Place</h2>
     </div>
 </div>
@@ -37,17 +38,25 @@ include("dbconnect.php");
 <div class="row mt-3 px-5">
     <div class="col">
         <h4>Things to do</h4>
+        <br>
         <ul>Get vaccinated</ul>
+        <br>
         <ul>Donate Blood</ul>
+        <br>
         <ul>Walk! It’s good for the mind, body and environment.</ul>
+        <br>
         <ul>Take regular exercise, find a sport or activity you enjoy. </ul>
+        <br>
         <ul>Take care of your mental health. Meditate, talk to friends and family, and seek professional help.</ul>
+        <br>
         <ul>Research and development (work in Dundee)</ul>
+        <br>
     </div>
 </div>
 <hr>
 </body>
 <h4>Get involved locally</h4>
+<br>
 
 
 <?php
