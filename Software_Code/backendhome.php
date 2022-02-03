@@ -100,7 +100,7 @@ include("dbconnect.php");
 
 <div id='removeEverything'>
     <h1>Remove</h1>
-    <form method="post" id="addForm">
+    <form method="post" id="removeForm">
         <div class="container-fluid" id="eventContainer">
             <div class="row justify-content-center">
                 <div class="row">
@@ -135,7 +135,7 @@ include("dbconnect.php");
             </div>
         </div>
         <div class="col text-center">
-            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submitRemove" value="Submit delete">
         </div>
     </form>
 </div>
