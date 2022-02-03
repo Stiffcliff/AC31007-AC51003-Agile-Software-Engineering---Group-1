@@ -38,52 +38,30 @@ include("dbconnect.php");
 
 
     <div id='addEverything'>
-        
-        <select name="adddrop" id="adddrop" onchange=addFunction()>
-            <option hidden disabled selected value> -- select an option -- </option>
-            <option value="1">nopovertyevents</option> 
-            <option value="2">goal 2</option>
-            <option value="3">goal 3</option>
-            <option value="4">goal 4</option> 
-            <option value="5">goal 5</option>
-            <option value="6">goal 6</option>
-            <option value="7">goal 7</option> 
-            <option value="8">goal 8</option>
-            <option value="9">goal 9</option>
-            <option value="10">goal 10</option> 
-            <option value="11">goal 11</option>
-            <option value="12">goal 12</option>
-            <option value="13">goal 13</option> 
-            <option value="14">goal 14</option>
-            <option value="15">goal 15</option>
-            <option value="16">goal 16</option> 
-            <option value="17">goal 17</option>
-        </select>
-    
         <form method="post" id="addForm">
             <div class="container-fluid" id="eventContainer">
                 <div class="row justify-content-center">
                     <div class="row">
                         <div class="col">
                             <select name="eventTable" id="eventTable">
-                                <option hidden disabled selected value>Select table name</option>
+                                <option hidden disabled selected value> Select table name</option>
                                 <option value="nopovertyevents">nopovertyevents - Goal 1</option>
                                 <option value="zerohungerevents">zerohungerevents - Goal 2</option>
                                 <option value="goodhealthevents">goodhealthevents - Goal 3</option>
-                                <option value="4">goal 4</option>
-                                <option value="5">goal 5</option>
-                                <option value="6">goal 6</option>
-                                <option value="7">goal 7</option>
-                                <option value="8">goal 8</option>
-                                <option value="9">goal 9</option>
-                                <option value="10">goal 10</option>
-                                <option value="11">goal 11</option>
-                                <option value="12">goal 12</option>
-                                <option value="13">goal 13</option>
-                                <option value="14">goal 14</option>
-                                <option value="15">goal 15</option>
-                                <option value="16">goal 16</option>
-                                <option value="17">goal 17</option>
+                                <option value="qualityeduevents">qualityeduevents - Goal 4</option>
+                                <option value="genderequalityevents">genderequalityevents - Goal 5</option>
+                                <option value="cleanwaterevents">cleanwaterevents - Goal 6</option>
+                                <option value="cleanenergyevents">cleanenergyevents - Goal 7</option>
+                                <option value="ecogrowthevents">ecogrowthevents - Goal 8</option>
+                                <option value="innovationevents">innovationevents - Goal 9</option>
+                                <option value="inequalevents">inequalevents - Goal 10</option>
+                                <option value="sustainableevents">sustainableevents - Goal 11</option>
+                                <option value="resconsevents">resconsevents - Goal 12</option>
+                                <option value="protectevents">protectevents - Goal 13</option>
+                                <option value="lifebelowevents">lifebelowevents - Goal 14</option>
+                                <option value="lifeonlandevents">lifeonlandevents - Goal 15</option>
+                                <option value="peaceevents">peaceevents - Goal 16</option>
+                                <option value="partnerevents">partnerevents - Goal 17</option>
                             </select>
                         </div>
                     </div>
@@ -122,6 +100,44 @@ include("dbconnect.php");
 
 <div id='removeEverything'>
     <h1>Remove</h1>
+    <form method="post" id="addForm">
+        <div class="container-fluid" id="eventContainer">
+            <div class="row justify-content-center">
+                <div class="row">
+                    <div class="col">
+                        <select name="eventTable" id="eventTable">
+                            <option hidden disabled selected value> Select table name</option>
+                            <option value="nopovertyevents">nopovertyevents - Goal 1</option>
+                            <option value="zerohungerevents">zerohungerevents - Goal 2</option>
+                            <option value="goodhealthevents">goodhealthevents - Goal 3</option>
+                            <option value="qualityeduevents">qualityeduevents - Goal 4</option>
+                            <option value="genderequalityevents">genderequalityevents - Goal 5</option>
+                            <option value="cleanwaterevents">cleanwaterevents - Goal 6</option>
+                            <option value="cleanenergyevents">cleanenergyevents - Goal 7</option>
+                            <option value="ecogrowthevents">ecogrowthevents - Goal 8</option>
+                            <option value="innovationevents">innovationevents - Goal 9</option>
+                            <option value="inequalevents">inequalevents - Goal 10</option>
+                            <option value="sustainableevents">sustainableevents - Goal 11</option>
+                            <option value="resconsevents">resconsevents - Goal 12</option>
+                            <option value="protectevents">protectevents - Goal 13</option>
+                            <option value="lifebelowevents">lifebelowevents - Goal 14</option>
+                            <option value="lifeonlandevents">lifeonlandevents - Goal 15</option>
+                            <option value="peaceevents">peaceevents - Goal 16</option>
+                            <option value="partnerevents">partnerevents - Goal 17</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="eventId" name="eventId" class="form-control" placeholder="Event ID" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <input type="submit" name="submit" value="Submit">
+        </div>
+    </form>
 </div>
 
 <form method="post" id="displayForm">
@@ -130,20 +146,20 @@ include("dbconnect.php");
         <option value="nopovertyevents">nopovertyevents - Goal 1</option>
         <option value="zerohungerevents">zerohungerevents - Goal 2</option>
         <option value="goodhealthevents">goodhealthevents - Goal 3</option>
-        <option value="4">goal 4</option>
-        <option value="5">goal 5</option>
-        <option value="6">goal 6</option>
-        <option value="7">goal 7</option>
-        <option value="8">goal 8</option>
-        <option value="9">goal 9</option>
-        <option value="10">goal 10</option>
-        <option value="11">goal 11</option>
-        <option value="12">goal 12</option>
-        <option value="13">goal 13</option>
-        <option value="14">goal 14</option>
-        <option value="15">goal 15</option>
-        <option value="16">goal 16</option>
-        <option value="17">goal 17</option>
+        <option value="qualityeduevents">qualityeduevents - Goal 4</option>
+        <option value="genderequalityevents">genderequalityevents - Goal 5</option>
+        <option value="cleanwaterevents">cleanwaterevents - Goal 6</option>
+        <option value="cleanenergyevents">cleanenergyevents - Goal 7</option>
+        <option value="ecogrowthevents">ecogrowthevents - Goal 8</option>
+        <option value="innovationevents">innovationevents - Goal 9</option>
+        <option value="inequalevents">inequalevents - Goal 10</option>
+        <option value="sustainableevents">sustainableevents - Goal 11</option>
+        <option value="resconsevents">resconsevents - Goal 12</option>
+        <option value="protectevents">protectevents - Goal 13</option>
+        <option value="lifebelowevents">lifebelowevents - Goal 14</option>
+        <option value="lifeonlandevents">lifeonlandevents - Goal 15</option>
+        <option value="peaceevents">peaceevents - Goal 16</option>
+        <option value="partnerevents">partnerevents - Goal 17</option>
     </select>
     <div class="col text-center">
         <input type="submit" name="submitDisplay" value="Display table">
@@ -173,6 +189,24 @@ include("dbconnect.php");
 
         readfile("backendhome.php");
     }
+?>
+
+<?php
+include "dbconnect.php";
+
+if ( isset( $_POST['submitRemove'] ) ) {
+
+    $EventTable = $_POST['eventTable'];
+    $EventId = intval($_POST['eventId']);
+
+    $fullDelete = "DELETE FROM `$EventTable` WHERE EventID=$EventId";
+
+    echo $fullDelete;
+
+    $db->query($fullDelete);
+
+    readfile("backendhome.php");
+}
 ?>
 
 <script>
@@ -237,14 +271,37 @@ if ( isset( $_POST['submitDisplay'] ) ) {
     $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM `$tableName`";
     $result = $db->query($sql);
 
+    echo "<table class='table'> 
+            <thead>
+                <tr>
+                    <th scope='col'>ID</th>
+                    <th scope='col'>Name</th>
+                    <th scope='col'>Location</th>
+                    <th scope='col'>Contact</th>
+                    <th scope='col'>Description</th>
+                </tr>
+            </thead>
+            <tbody>";
+
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "<br> ID:" . $row["EventName"] . " Name:" . $row["EventName"] . " Location:" . $row["EventLocation"] . " Contact:" . $row["EventContact"] . " Description:" . $row["EventDescription"] . "<br>";
+            echo "<tr>";
+            echo "<th scope='row'></th>";
+            echo "<td>". $row['EventID'] ."</td>";
+            echo "<td>". $row['EventName'] ."</td>";
+            echo "<td>". $row['EventLocation'] ."</td>";
+            echo "<td>". $row['EventContact'] ."</td>";
+            echo "<td>". $row['EventDescription'] ."</td>";
+            echo "</tr>";
+//            echo "<br> ID:" . $row["EventName"] . " Name:" . $row["EventName"] . " Location:" . $row["EventLocation"] . " Contact:" . $row["EventContact"] . " Description:" . $row["EventDescription"] . "<br>";
         }
     } else {
         echo "0 results";
     }
+
+    echo "</tbody>";
+    echo "</table>";
 
     $db->close();
 }
