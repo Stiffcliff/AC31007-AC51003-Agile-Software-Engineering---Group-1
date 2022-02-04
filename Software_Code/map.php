@@ -15,7 +15,7 @@ body { margin: 0; padding: 0; }
 #map { position: absolute; top: 75px; bottom: 0; width: 100%; height: 100%}
 </style>
 
-//nav bar
+<!--nav bar-->
 <nav class = "nav">
     <ul>
     <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
