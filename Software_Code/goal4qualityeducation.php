@@ -4,7 +4,9 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
+
 <title>Goal 4</title>
+
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -13,17 +15,19 @@ include("dbconnect.php");
 <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-
+	//links for nav
     <nav class = "nav">
-    <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <li style= "float: right"><a href="#contact us">Contact Us</a></li>
-    </ul>    
+        <ul>
+        <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="contactus">Contact Us</a></li>
+	<li style= "float: right"><a href="map">Interactive Map</a></li>
+    </ul>  
     </nav>
 </head>
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+	    //header
         <br>
         <h2>Making Dundee A Better Place</h2>
         <br>
@@ -32,6 +36,7 @@ include("dbconnect.php");
 <hr>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
+	    //more info about specific goal
         <h3>Goal 4: Quality Education</h3>
     </div>
 </div>
@@ -52,7 +57,7 @@ include("dbconnect.php");
 <br>
 
 
-
+//retrieve local items from database
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM qualityeduevents";
 $result = $db->query($sql);
@@ -72,9 +77,11 @@ $db->close();
 <hr>
 <div id="map">
 <style>
+	//styling for map
 body { margin: 20; padding: 0; }
 #map { position: relative; top: 0; bottom: 0; width: 500px; height: 375px}
  #marker {
+	 //marker image with SD colour
         background-image: url(https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png);
         background-size: cover;
         width: 20px;
@@ -92,6 +99,7 @@ body { margin: 20; padding: 0; }
     //initialise map
     const map = new mapboxgl.Map({
         container: 'map',
+	    //map stu#yle with SD colour
         style: 'mapbox://styles/leiaea/ckz4avyp0001414p9t4mzt7c1',
         center: [-2.9668332, 56.4746004],
         zoom: 9
@@ -101,6 +109,7 @@ body { margin: 20; padding: 0; }
     const nav = new mapboxgl.NavigationControl();
     map.addControl(nav, 'top-left');
 
+//control to add user location to map if requested	
     map.addControl(
         new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -112,7 +121,7 @@ body { margin: 20; padding: 0; }
         showUserHeading: true
         })
     );
-
+//option to make map full screen
     map.addControl(new mapboxgl.FullscreenControl());
 
     //set location

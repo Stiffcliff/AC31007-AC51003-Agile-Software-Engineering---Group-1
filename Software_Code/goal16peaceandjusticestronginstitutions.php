@@ -13,17 +13,19 @@ include("dbconnect.php");
 <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-   
+   //nav links
     <nav class = "nav">
-    <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <li style= "float: right"><a href="#contact">Contact Us</a></li>
-    </ul>    
+        <ul>
+        <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="contactus">Contact Us</a></li>
+	<li style= "float: right"><a href="map">Interactive Map</a></li>
+    </ul>  
     </nav>
 </head>
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+	    //header
         <br>
         <h2>Making Dundee A Better Place</h2>
         <br>
@@ -32,6 +34,7 @@ include("dbconnect.php");
 <hr>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
+	    //more info about chosen goal
         <h3>Goal 16: Peace and Justice, Strong Institutions</h3>
     </div>
 </div>
@@ -56,7 +59,7 @@ include("dbconnect.php");
 <br>
 
 
-
+//read local items from DB
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM peaceevents";
 $result = $db->query($sql);
@@ -76,9 +79,11 @@ $db->close();
 <hr>
 <div id="map">
 <style>
+	//map styling
 body { margin: 20; padding: 0; }
 #map { position: relative; top: 0; bottom: 0; width: 500px; height: 375px}
  #marker {
+	 //marler with SD colour
         background-image: url(https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png);
         background-size: cover;
         width: 20px;
@@ -96,6 +101,7 @@ body { margin: 20; padding: 0; }
     //initialise map
     const map = new mapboxgl.Map({
         container: 'map',
+	    //map styling with Sd colour
         style: 'mapbox://styles/leiaea/ckz4avyp0001414p9t4mzt7c1',
         center: [-2.9668332, 56.4746004],
         zoom: 9
@@ -105,6 +111,7 @@ body { margin: 20; padding: 0; }
     const nav = new mapboxgl.NavigationControl();
     map.addControl(nav, 'top-left');
 
+//add control to see user location on map and track movements		
     map.addControl(
         new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -117,6 +124,7 @@ body { margin: 20; padding: 0; }
         })
     );
 
+		//full screen option
     map.addControl(new mapboxgl.FullscreenControl());
 
     //set location
