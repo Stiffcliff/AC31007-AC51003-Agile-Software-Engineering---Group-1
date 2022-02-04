@@ -29,7 +29,7 @@ body { margin: 0; padding: 0; }
 <style>
     //map styling
     #marker {
-        background-image: url("https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png");
+        background-image: url("https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/marker.png");
         background-size: cover;
         width: 20px;
         height: 20px;
