@@ -14,11 +14,13 @@ include("dbconnect.php");
 <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
+<!--links for nav bar -->
     <nav class = "nav">
-    <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <li style= "float: right"><a href="#contact us">Contact Us</a></li>
-    </ul>    
+        <ul>
+        <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="contactus">Contact Us</a></li>
+	<li style= "float: right"><a href="map">Interactive Map</a></li>
+    </ul>  
     </nav>
 
 </head>
@@ -30,6 +32,7 @@ include("dbconnect.php");
     </div>
 </div>
 <div class="row mt-5">
+	  <!-- header -->
     <div class="col d-flex justify-content-center">
 	<br>
         <h2>Making Dundee A Better Place</h2>
@@ -37,6 +40,7 @@ include("dbconnect.php");
     </div>
 </div>
 <hr>
+	  <!-- more about specific goal -->
 <div class="row">
     <div class="col d-flex mt-2 px-5">
         <h3>Goal 1: No Poverty</h3>
@@ -59,7 +63,7 @@ include("dbconnect.php");
 </body>
 <h4>Get involved locally</h4>
 
-
+	  <!-- retrieve local items from database -->
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM nopovertyevents";
 $result = $db->query($sql);
@@ -76,6 +80,7 @@ if ($result->num_rows > 0) {
 $db->close();
 
 ?>
+	<!-- set styling for map -->
 <hr>
     <div id="map">
         <style>
@@ -83,6 +88,7 @@ body { margin: 20; padding: 0; }
 #map { position:relative; top: 0; bottom: 0; width: 500px; height: 375px}
             
             #marker {
+		    	<!-- personalised marker using SD colour -->
         background-image: url(https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png);
         background-size: cover;
         width: 20px;
@@ -100,27 +106,30 @@ body { margin: 20; padding: 0; }
     //initialise map
     const map = new mapboxgl.Map({
         container: 'map',
+	    	<!-- personalised map using colours from SD -->
         style: 'mapbox://styles/leiaea/ckz4avyp0001414p9t4mzt7c1',
         center: [-2.9668332, 56.4746004],
         zoom: 9
     });
 
-    //adds navigation tools to map - zoom etc
+<!-- add nav control to map -->
     const nav = new mapboxgl.NavigationControl();
     map.addControl(nav, 'top-left');
 	
+	<!-- add control so user can see their location on the map -->
 	 map.addControl(
         new mapboxgl.GeolocateControl({
         positionOptions: {
             enableHighAccuracy: true
         },
-        // When active the map will receive updates to the device's location as it changes.
+	<!-- track user movements and update on map -->
         trackUserLocation: true,
-        // Draw an arrow next to the location dot to indicate which direction the device is heading.
+<!-- show direction device is facing -->
         showUserHeading: true
         })
     );
 
+<!-- allow map to be made full screen -->		
     map.addControl(new mapboxgl.FullscreenControl());
 
     //set location
