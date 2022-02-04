@@ -3,19 +3,22 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 ?>
 <html>
 <head>
-    <title>Sustainable Dundee</title>
-    <meta charset="UTF-8">
-    <meta name="robots" value="noindex,follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	
+<meta charset="utf-8">
+<title>Sustainable Dundee</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!--links for nav bar -->
     <nav class = "nav">
         <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <li style= "float: right"><a href="contactus.php">Contact Us</a></li>
+        <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="contactus">Contact Us</a></li>
+	<li style= "float: right"><a href="map">Interactive Map</a></li>
     </ul>  
     </nav>
 
@@ -25,7 +28,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 <body>
 
 <hr>
-
+<!-- header -->
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
         <h2>Making Dundee A Better Place</h2>
@@ -33,13 +36,15 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 </div>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
+	    <!--link to map and introduce dev projects -->
         <p>
-         Development projects we are working on:	 
+         Check out our map of sustainable options in Dundee <a href = 'map'>here</a>!
+         <br>Development projects we are working on:	 
         </p>
     </div>
 </div>
-
 <div class="main">
+	<!--image links to more info about each goal -->
 <a href = "/goal1">
         <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/no_poverty.png"height="200" width="200" alt = "No Poverty">
 	</a>
@@ -93,6 +98,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 	</a>	
 </div>
 <hr>
+	
 </body>
 </html>
 <?php

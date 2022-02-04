@@ -3,7 +3,7 @@ include("dbconnect.php");
 ?>
 <html>
 <head>
-    <title>Sustainable Dundee</title>
+    <title>Goal 11</title>
     <meta charset="UTF-8">
     <meta name="robots" value="noindex,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +12,19 @@ include("dbconnect.php");
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <!--nav links-->
     <nav class = "nav">
-    <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <li style= "float: right"><a href="#contact">Contact Us</a></li>
-    </ul>    
+        <ul>
+        <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="contactus">Contact Us</a></li>
+	<li style= "float: right"><a href="map">Interactive Map</a></li>
+    </ul>  
     </nav>
 </head>
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+        <!--header-->
         <br>
         <h2>Making Dundee A Better Place</h2>
         <br>
@@ -30,6 +33,7 @@ include("dbconnect.php");
 <hr>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
+        <!--more info about chosen goal-->
         <h3>Goal 11: Sustainable Cities and Communities (Incl. Sustainable Transport)</h3>
         <p>
           Make cities and human settlements inclusive, safe, resilient and sustainable.
@@ -57,6 +61,7 @@ include("dbconnect.php");
 <h4>Get involved locally</h4>
 <br>
 
+    <!--read in local items from DB-->
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM sustainablevents";
 $result = $db->query($sql);
