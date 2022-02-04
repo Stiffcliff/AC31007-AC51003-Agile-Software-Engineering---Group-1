@@ -98,3 +98,26 @@ Issues/Blockers:
 - The nav bar has become half size, and we are unsure as to what has caused this issue.
 
 ---
+## Day [4] - Scrum Meeting summary
+The Scrum Master for this meeting was Jason Beesla
+
+### Members Present:
+Jason Beesla, Cameron Sutcliffe, Leia Ainscough, Ivan Amigo, Andrej Kocak and Bernard Aihevba
+
+### Members Not Present:
+
+
+### Apologies:
+
+
+### Summary of Conversation:
+Things we did:
+- Jason made the agenda for the Sprint Review today
+- Bernard and Leia worked on the individual maps for each goal page
+- Cameron worked on editing the tables, some internal commentary and burndown and burnup charts
+- Andrej finished the code review on Cameron's work
+
+Issues/Blockers:
+- Cameron had issues with the multiqueries when carrying out work on the backend editing record functionality.
+
+---
