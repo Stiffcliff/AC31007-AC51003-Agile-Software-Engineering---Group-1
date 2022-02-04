@@ -4,7 +4,7 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
-<title>Attach a popup to a marker instance</title>
+<title>Goal 7</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -32,13 +32,13 @@ include("dbconnect.php");
 <div class="row">
     <div class="col d-flex mt-2 px-5">
         <h3>Goal 7: Affordable and Clean Energy</h3>
-        <p>
-          Ensure access to affordable, reliable, sustainable and modern energy for all.
-        </p>
     </div>
 </div>
 <div class="row mt-3 px-5">
     <div class="col">
+	<p>
+          Ensure access to affordable, reliable, sustainable and modern energy for all.
+        </p>
         <h4>Things to do</h4>
         <br>
         <ul>Switch off your appliances at the socket. Turn off the lights when you’re not using them.</ul>
