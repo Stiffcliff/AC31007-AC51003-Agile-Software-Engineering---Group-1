@@ -88,11 +88,11 @@ $db->close();
 <hr>
 <div id="map">
 <style>
-	 	//set styling for map
+
 body { margin: 20; padding: 0; }
 #map { position: relative; top: 0; bottom: 0; width: 500px; height: 375px}
  #marker {
-	   //personalised marker using SD colour
+	 
         background-image: url(https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png);
         background-size: cover;
         width: 20px;
