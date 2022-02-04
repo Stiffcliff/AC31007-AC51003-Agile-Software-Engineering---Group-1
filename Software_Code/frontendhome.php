@@ -40,67 +40,13 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
         </p>
     </div>
 </div>
-
-<div class="main">
-<a href = "/goal1">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/no_poverty.png"height="200" width="200" alt = "No Poverty">
-	</a>
-<a href = "/goal2">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/no_hunger.png"height="200" width="200" alt = "No Hunger">
-	</a>	
-<a href = "/goal3">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/good_health.png"height="200" width="200" alt = "Good Health">
-	</a>
-<a href = "/goal4">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/quality_education.png"height="200" width="200" alt = "Quality Education">
-	</a>	
-<a href = "/goal5">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/gender_equality.png"height="200" width="200" alt = "Gender Equality">
-	</a>
-<a href = "/goal6">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/clean_water.png"height="200" width="200" alt = "Clean Water">
-	</a>
-<a href = "/goal7">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/clean_energy.png"height="200" width="200" alt = "Clean Energy">
-	</a>
-<a href = "/goal8">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/good_jobs.png"height="200" width="200" alt = "Good Jobs">
-	</a>
-<a href = "/goal9">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/innovation.png"height="200" width="200" alt = "Innovation">
-	</a>	
-<a href = "/goal10">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/reduced_inequality.png"height="200" width="200" alt = "Reduced Inequalities">
-	</a>
-<a href = "/goal11">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable_cities.png"height="200" width="200" alt = "Sustainable Cities">
-	</a>	
-<a href = "/goal12">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/responsible_consumption.png"height="200" width="200" alt = "Responsible Consumption">
-	</a>
-<a href = "/goal13">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/protect_the_planet.png"height="200" width="200" alt = "Protect The Planet">
-	</a>
-<a href = "/goal14">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/life_below_water.png"height="200" width="200" alt = "Life Below Water">
-	</a>
-<a href = "/goal15">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/life_on_land.png"height="200" width="200" alt = "Life On Land">
-	</a>
-<a href = "/goal16">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/peace_and_justice.png"height="200" width="200" alt = "Peace and Justice">
-		</a>
-<a href = "/goal17">
-        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/partnerships.png"height="200" width="200" alt = "Partnerships for the Goals">
-	</a>	
-</div>
-<hr>
+	
 	<div id="map">
 <style>
 body { margin: 20; padding: 0; }
 #map { position: relative; top: 0; bottom: 0; width: 500px; height: 375px}
  #marker {
-        background-image: url(marker.png);
+        background-image: url(https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png);
         background-size: cover;
         width: 20px;
         height: 20px;
@@ -390,8 +336,62 @@ body { margin: 20; padding: 0; }
         .addTo(map);	
 		
 </script>
-	</div>
-	<hr>
+
+<div class="main">
+<a href = "/goal1">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/no_poverty.png"height="200" width="200" alt = "No Poverty">
+	</a>
+<a href = "/goal2">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/no_hunger.png"height="200" width="200" alt = "No Hunger">
+	</a>	
+<a href = "/goal3">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/good_health.png"height="200" width="200" alt = "Good Health">
+	</a>
+<a href = "/goal4">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/quality_education.png"height="200" width="200" alt = "Quality Education">
+	</a>	
+<a href = "/goal5">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/gender_equality.png"height="200" width="200" alt = "Gender Equality">
+	</a>
+<a href = "/goal6">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/clean_water.png"height="200" width="200" alt = "Clean Water">
+	</a>
+<a href = "/goal7">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/clean_energy.png"height="200" width="200" alt = "Clean Energy">
+	</a>
+<a href = "/goal8">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/good_jobs.png"height="200" width="200" alt = "Good Jobs">
+	</a>
+<a href = "/goal9">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/innovation.png"height="200" width="200" alt = "Innovation">
+	</a>	
+<a href = "/goal10">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/reduced_inequality.png"height="200" width="200" alt = "Reduced Inequalities">
+	</a>
+<a href = "/goal11">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable_cities.png"height="200" width="200" alt = "Sustainable Cities">
+	</a>	
+<a href = "/goal12">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/responsible_consumption.png"height="200" width="200" alt = "Responsible Consumption">
+	</a>
+<a href = "/goal13">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/protect_the_planet.png"height="200" width="200" alt = "Protect The Planet">
+	</a>
+<a href = "/goal14">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/life_below_water.png"height="200" width="200" alt = "Life Below Water">
+	</a>
+<a href = "/goal15">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/life_on_land.png"height="200" width="200" alt = "Life On Land">
+	</a>
+<a href = "/goal16">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/peace_and_justice.png"height="200" width="200" alt = "Peace and Justice">
+		</a>
+<a href = "/goal17">
+        <img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/partnerships.png"height="200" width="200" alt = "Partnerships for the Goals">
+	</a>	
+</div>
+<hr>
+	
 </body>
 </html>
 <?php
