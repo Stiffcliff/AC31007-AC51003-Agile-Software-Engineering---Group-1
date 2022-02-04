@@ -4,6 +4,9 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
+
+<title>Goal 4</title>
+
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -35,14 +38,14 @@ include("dbconnect.php");
     <div class="col d-flex mt-2 px-5">
 	    //more info about specific goal
         <h3>Goal 4: Quality Education</h3>
-        <p>
-          Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
-        </p>
     </div>
 </div>
 <div class="row mt-3 px-5">
     <div class="col">
-        <h4>Things to do</h4>
+        <p>
+          Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
+        </p>
+	<h4>Things to do</h4>
         <br>
         <ul>Donate used books and resources to schools and kids groups.</ul>
         <br>

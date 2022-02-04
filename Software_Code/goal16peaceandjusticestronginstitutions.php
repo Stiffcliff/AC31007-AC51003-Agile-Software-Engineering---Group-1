@@ -4,6 +4,7 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
+<title>Goal 16</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -35,13 +36,13 @@ include("dbconnect.php");
     <div class="col d-flex mt-2 px-5">
 	    //more info about chosen goal
         <h3>Goal 16: Peace and Justice, Strong Institutions</h3>
-        <p>
-          Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.
-        </p>
     </div>
 </div>
 <div class="row mt-3 px-5">
     <div class="col">
+	<p>
+          Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.
+        </p>
         <h4>Things to do</h4>
         <br>
         <ul>Ask your local and national authorities to engage in initiatives that don't harm people or the planet.</ul>

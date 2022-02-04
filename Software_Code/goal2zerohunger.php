@@ -4,6 +4,7 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
+<title>Goal 2</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -37,14 +38,15 @@ include("dbconnect.php");
 <div class="row">
     <div class="col d-flex mt-2 px-5">
         <h3>Goal 2: Zero Hunger</h3>
-        <p>
-          End hunger, achieve food security and improved nutrition and promote sustainable agriculture.
-        </p>
+        
     </div>
 </div>
 <div class="row mt-3 px-5">
     <div class="col">
-        <h4>Things to do</h4>
+        <p>
+          End hunger, achieve food security and improved nutrition and promote sustainable agriculture.
+        </p>
+	<h4>Things to do</h4>
         <br>
         <ul>Buy local and in-season food.</ul>
         <br>

@@ -4,6 +4,7 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
+<title>Goal 12</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -35,13 +36,13 @@ include("dbconnect.php");
     <div class="col d-flex mt-2 px-5">
 	    //more info about chosen goal
         <h3>Goal 12: Responsible Consumption and Production</h3>
-        <p>
-          Ensure sustainable consumption and production patterns.
-        </p>
     </div>
 </div>
 <div class="row mt-3 px-5">
     <div class="col">
+	<p>
+          Ensure sustainable consumption and production patterns.
+        </p>
         <h4>Things to do</h4>
         <br>
         <ul>Shop locally. Supporting local businesses keeps people employed and circulates money back in to the local community.</ul>

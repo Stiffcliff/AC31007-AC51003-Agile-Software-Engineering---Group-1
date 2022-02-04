@@ -25,12 +25,6 @@ include("dbconnect.php");
 
 </head>
 <body>
-<div class="row">
-    <div class="col d-flex justify-content-center">
-	<br>
-        <h1>Sustainable Dundee</h1>
-    </div>
-</div>
 <div class="row mt-5">
 	  <!-- header -->
     <div class="col d-flex justify-content-center">
@@ -44,13 +38,14 @@ include("dbconnect.php");
 <div class="row">
     <div class="col d-flex mt-2 px-5">
         <h3>Goal 1: No Poverty</h3>
-        <p>
-          End Poverty in all its forms everywhere.
-        </p>
+     
     </div>
 </div>
 <div class="row mt-3 px-5">
     <div class="col">
+	 <p>
+          End Poverty in all its forms everywhere.
+        </p>
         <h4>Things to do</h4>
 		<br>
         <ul>Find a charity to support</ul>

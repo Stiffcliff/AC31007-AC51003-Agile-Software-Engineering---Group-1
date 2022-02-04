@@ -4,6 +4,8 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
+
+<title>Goal 15</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -35,13 +37,13 @@ include("dbconnect.php");
     <div class="col d-flex mt-2 px-5">
 	    //more info about chosen goal
         <h3>Goal 15: Life on Land</h3>
-        <p>
-          Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.
-        </p>
     </div>
 </div>
 <div class="row mt-3 px-5">
     <div class="col">
+	<p>
+          Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.
+        </p>
         <h4>Things to do</h4>
         <br>
         <ul>Don't buy products tested on animals</ul>
