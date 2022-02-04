@@ -4,7 +4,6 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
-<title>Attach a popup to a marker instance</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -13,16 +12,19 @@ include("dbconnect.php");
 <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-     <nav class = "nav">
-    <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <li style= "float: right"><a href="#contact">Contact Us</a></li>
-    </ul>    
+	//nav links
+    <nav class = "nav">
+        <ul>
+        <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="contactus">Contact Us</a></li>
+	<li style= "float: right"><a href="map">Interactive Map</a></li>
+    </ul>  
     </nav>
 </head>
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
+	    //header
         <br>
         <h2>Making Dundee A Better Place</h2>
         <br>
@@ -31,6 +33,7 @@ include("dbconnect.php");
 <hr>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
+	    //more info about chosen goal
         <h3>Goal 12: Responsible Consumption and Production</h3>
         <p>
           Ensure sustainable consumption and production patterns.
@@ -74,7 +77,7 @@ include("dbconnect.php");
 <h4>Get involved locally</h4>
 <br>
 
-
+//read in local items from DB
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM resconsevents";
 $result = $db->query($sql);
@@ -94,9 +97,11 @@ $db->close();
 <hr>
 <div id="map">
 <style>
+	//map styling
 body { margin: 20; padding: 0; }
 #map { position: relative; top: 0; bottom: 0; width: 500px; height: 375px}
  #marker {
+	 //marker with SD colour
         background-image: url(https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png);
         background-size: cover;
         width: 20px;
@@ -114,6 +119,7 @@ body { margin: 20; padding: 0; }
     //initialise map
     const map = new mapboxgl.Map({
         container: 'map',
+	    //map with Sd colour
         style: 'mapbox://styles/leiaea/ckz4avyp0001414p9t4mzt7c1',
         center: [-2.9668332, 56.4746004],
         zoom: 9
@@ -123,6 +129,7 @@ body { margin: 20; padding: 0; }
     const nav = new mapboxgl.NavigationControl();
     map.addControl(nav, 'top-left');
 
+		//control to use user location on map
     map.addControl(
         new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -135,6 +142,7 @@ body { margin: 20; padding: 0; }
         })
     );
 
+		//full screen option
     map.addControl(new mapboxgl.FullscreenControl());
 
     //set location
