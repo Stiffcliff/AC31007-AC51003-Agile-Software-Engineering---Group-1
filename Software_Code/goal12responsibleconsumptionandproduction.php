@@ -98,7 +98,6 @@ $db->close();
 <hr>
 <div id="map">
 <style>
-	//map styling
 body { margin: 20; padding: 0; }
 #map { position: relative; top: 0; bottom: 0; width: 500px; height: 375px}
  #marker {
