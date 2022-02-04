@@ -89,8 +89,7 @@ $db->close();
 body { margin: 20; padding: 0; }
 #map { position:relative; top: 0; bottom: 0; width: 500px; height: 375px}
             
-            #marker {
-     <!-- personalised marker using SD colour -->		    
+            #marker {	    
         background-image: url(https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png);
         background-size: cover;
         width: 20px;
@@ -108,7 +107,7 @@ body { margin: 20; padding: 0; }
     //initialise map
     const map = new mapboxgl.Map({
         container: 'map',
-     <!-- personalised map using colours from SD -->	    
+ // personalised map using colours from SD -->	    
         style: 'mapbox://styles/leiaea/ckz4avyp0001414p9t4mzt7c1',
         center: [-2.9668332, 56.4746004],
         zoom: 9

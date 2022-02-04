@@ -15,7 +15,7 @@ include("dbconnect.php");
 <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-	//add nav links
+	<!--add nav links-->
     <nav class = "nav">
         <ul>
         <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
@@ -27,7 +27,7 @@ include("dbconnect.php");
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
-	    //header
+	    <!--header-->
         <br>
         <h2>Making Dundee A Better Place</h2>
         <br>
@@ -36,7 +36,7 @@ include("dbconnect.php");
 <hr>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
-	    //more info about chosen goal
+	    <!--more info about chosen goal-->
         <h3>Goal 9: Industry, Innovation and Infrastructure</h3>
     </div>
 </div>
@@ -60,7 +60,7 @@ include("dbconnect.php");
 <h4>Get involved locally</h4>
 <br>
 
-//read in local items from DB
+	<!--read in local items from DB-->
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM innovationevents";
 $result = $db->query($sql);
@@ -80,11 +80,9 @@ $db->close();
 <hr>
 <div id="map">
 <style>
-	//map styling
 body { margin: 20; padding: 0; }
 #map { position: relative; top: 0; bottom: 0; width: 500px; height: 375px}
  #marker {
-	 //marker with SD colour
         background-image: url(https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png);
         background-size: cover;
         width: 20px;
