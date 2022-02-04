@@ -8,7 +8,7 @@ $rules = array(
     'backendhome' => "/backend",
     'apiShowEvents' => "/table",
     'contactus' => "/contactus",
-    'map' => "/interactivemap",
+    'map' => "/map",
 
 
     //Admin Pages
