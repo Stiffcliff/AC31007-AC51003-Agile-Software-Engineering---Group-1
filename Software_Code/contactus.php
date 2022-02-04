@@ -1,4 +1,7 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
+    </head>
 <h2>Make a suggestion of a sustainable example in Dundee!</h2>
 <form action "contact.php" method = "post">
 
