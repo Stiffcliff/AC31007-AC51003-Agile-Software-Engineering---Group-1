@@ -15,7 +15,7 @@ include("dbconnect.php");
 <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-	//links for nav
+	<!---links for nav -->
     <nav class = "nav">
         <ul>
         <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
@@ -27,7 +27,7 @@ include("dbconnect.php");
 <body>
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
-	    //header
+	    <!---header-->
         <br>
         <h2>Making Dundee A Better Place</h2>
         <br>
@@ -36,7 +36,7 @@ include("dbconnect.php");
 <hr>
 <div class="row">
     <div class="col d-flex mt-2 px-5">
-	    //more info about specific goal
+	    <!---more info about specific goal-->
         <h3>Goal 4: Quality Education</h3>
     </div>
 </div>
@@ -57,7 +57,7 @@ include("dbconnect.php");
 <br>
 
 
-//retrieve local items from database
+<!---retrieve local items from database-->
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM qualityeduevents";
 $result = $db->query($sql);
