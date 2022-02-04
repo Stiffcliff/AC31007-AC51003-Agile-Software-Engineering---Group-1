@@ -4,7 +4,6 @@ include("dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
-<title>Attach a popup to a marker instance</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -13,15 +12,19 @@ include("dbconnect.php");
 <link rel="stylesheet" href="https://gitcdn.link/cdn/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-
+<!--links for nav bar -->
     <nav class = "nav">
-    <ul>
-        <li><a href = "#"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
-        <li style= "float: right"><a href="#contact us">Contact Us</a></li>
-    </ul>    
+        <ul>
+        <li><a href = "frontendhome"><img src="https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/resources/sustainable800.png" height="56.3" alt="Sustainable dundee logo"></a></li>
+        <li style= "float: right"><a href="contactus">Contact Us</a></li>
+	<li style= "float: right"><a href="map">Interactive Map</a></li>
+    </ul>  
     </nav>
+
+
 </head>
 <body>
+    <!-- header -->	
 <div class="row mt-5">
     <div class="col d-flex justify-content-center">
         <br>
@@ -30,6 +33,7 @@ include("dbconnect.php");
     </div>
 </div>
 <hr>
+    <!-- more about specific goal -->
 <div class="row">
     <div class="col d-flex mt-2 px-5">
         <h3>Goal 2: Zero Hunger</h3>
@@ -59,7 +63,7 @@ include("dbconnect.php");
 <h4>Get involved locally</h4>
 <br>
 
-
+    <!-- retrieve local items from database -->
 <?php
 $sql = "SELECT EventID,EventName,EventLocation,EventContact,EventDescription FROM zerohungerevents";
 $result = $db->query($sql);
@@ -78,11 +82,13 @@ $db->close();
 ?>
 <hr>
  <div id="map">
+ 	<!-- set styling for map -->	 
         <style>
 body { margin: 20; padding: 0; }
 #map { position:relative; top: 0; bottom: 0; width: 500px; height: 375px}
             
             #marker {
+     <!-- personalised marker using SD colour -->		    
         background-image: url(https://raw.githubusercontent.com/Stiffcliff/AC31007-AC51003-Agile-Software-Engineering---Group-1/main/Software_Code/marker.png);
         background-size: cover;
         width: 20px;
@@ -100,6 +106,7 @@ body { margin: 20; padding: 0; }
     //initialise map
     const map = new mapboxgl.Map({
         container: 'map',
+     <!-- personalised map using colours from SD -->	    
         style: 'mapbox://styles/leiaea/ckz4avyp0001414p9t4mzt7c1',
         center: [-2.9668332, 56.4746004],
         zoom: 9
@@ -108,7 +115,19 @@ body { margin: 20; padding: 0; }
     //adds navigation tools to map - zoom etc
     const nav = new mapboxgl.NavigationControl();
     map.addControl(nav, 'top-left');
-
+    
+	//add control so user can see their location on map	
+	map.addControl(
+        new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        // When active the map will receive updates to the device's location as it changes.
+        trackUserLocation: true,
+        // Draw an arrow next to the location dot to indicate which direction the device is heading.
+        showUserHeading: true
+        })
+    );
     //set location
    
 	const fareshare = [-2.984878, 56.461947];
