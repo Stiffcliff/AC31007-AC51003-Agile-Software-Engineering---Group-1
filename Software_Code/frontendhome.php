@@ -4,7 +4,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/resources/');
 <html>
 <head>
 <meta charset="utf-8">
-<title>Attach a popup to a marker instance</title>
+<title>Sustainable Dundee</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
