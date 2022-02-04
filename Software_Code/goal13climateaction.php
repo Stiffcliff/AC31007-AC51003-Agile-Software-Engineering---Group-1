@@ -3,7 +3,7 @@ include("dbconnect.php");
 ?>
 <html>
 <head>
-    <title>Sustainable Dundee</title>
+    <title>Goal 13</title>
     <meta charset="UTF-8">
     <meta name="robots" value="noindex,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
